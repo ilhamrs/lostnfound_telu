@@ -56,8 +56,7 @@
     <div id="header-fix" class="header fixed-top">
         <div class="site-width">
             <nav class="navbar navbar-expand-lg  p-0" style="background-color: #a12520;">
-                <div class="navbar-header  h-100 h4 mb-0 align-self-center logo-bar text-left"
-                    style="background-color: #a12520;">
+                <div class="navbar-header  h-100 h4 mb-0 align-self-center logo-bar text-left" style="background-color: #a12520;">
                     <a href="home" class="horizontal-logo">
                         <div class="media">
                             <!-- <img src="img/tes4.png" alt="" class="d-flex img-fluid" width="200"> -->
@@ -66,20 +65,17 @@
                         </div>
                     </a>
                 </div>
-                <div class="navbar-header h4 mb-0 text-center h-100 collapse-menu-bar"
-                    style="background-color: #a12520;">
+                <div class="navbar-header h4 mb-0 text-center h-100 collapse-menu-bar" style="background-color: #a12520;">
                     <a href="#" class="sidebarCollapse" id="collapse"><i class="icon-menu"></i></a>
                 </div>
 
                 <form class="float-left d-none d-lg-block search-form">
                     <div class="form-group mb-0 position-relative" style="background-color: antiquewhite;">
-                        <input type="text" class="form-control border-0 rounded bg-search pl-5"
-                            placeholder="Cari barang...">
+                        <input type="text" class="form-control border-0 rounded bg-search pl-5" placeholder="Cari barang...">
                         <div class="btn-search position-absolute top-0">
                             <a href="#"><i class="h6 icon-magnifier"></i></a>
                         </div>
-                        <a href="#" class="position-absolute close-button mobilesearch d-lg-none" data-toggle="dropdown"
-                            aria-expanded="false"><i class="icon-close h5"></i>
+                        <a href="#" class="position-absolute close-button mobilesearch d-lg-none" data-toggle="dropdown" aria-expanded="false"><i class="icon-close h5"></i>
                         </a>
 
                     </div>
@@ -87,25 +83,21 @@
                 <div class="navbar-right ml-auto h-150">
                     <ul class="ml-auto p-0 m-0 list-unstyled d-flex top-icon h-100">
                         <li class="d-inline-block align-self-center  d-block d-lg-none">
-                            <a href="#" class="nav-link mobilesearch" data-toggle="dropdown" aria-expanded="false"><i
-                                    class="icon-magnifier h4"></i>
+                            <a href="#" class="nav-link mobilesearch" data-toggle="dropdown" aria-expanded="false"><i class="icon-magnifier h4"></i>
                             </a>
                         </li>
 
                         <li class="dropdown align-self-center d-inline-block">
-                            <a href="#" class="nav-link" data-toggle="dropdown" aria-expanded="false"><i
-                                    class="icon-bell h4"></i>
+                            <a href="#" class="nav-link" data-toggle="dropdown" aria-expanded="false"><i class="icon-bell h4"></i>
                                 <span class="badge badge-default"> <span class="ring">
                                     </span><span class="ring-point">
                                     </span> </span>
                             </a>
                             <ul class="dropdown-menu dropdown-menu-right border   py-0">
                                 <li>
-                                    <a class="dropdown-item px-2 py-2 border border-top-0 border-left-0 border-right-0"
-                                        href="#">
+                                    <a class="dropdown-item px-2 py-2 border border-top-0 border-left-0 border-right-0" href="#">
                                         <div class="media">
-                                            <img src="dist/images/author.jpg" alt=""
-                                                class="d-flex mr-3 img-fluid rounded-circle w-50">
+                                            <img src="dist/images/author.jpg" alt="" class="d-flex mr-3 img-fluid rounded-circle w-50">
                                             <div class="media-body">
                                                 <p class="mb-0 text-success">john send a message</p>
                                                 12 min ago
@@ -114,11 +106,9 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item px-2 py-2 border border-top-0 border-left-0 border-right-0"
-                                        href="#">
+                                    <a class="dropdown-item px-2 py-2 border border-top-0 border-left-0 border-right-0" href="#">
                                         <div class="media">
-                                            <img src="dist/images/author2.jpg" alt=""
-                                                class="d-flex mr-3 img-fluid rounded-circle">
+                                            <img src="dist/images/author2.jpg" alt="" class="d-flex mr-3 img-fluid rounded-circle">
                                             <div class="media-body">
                                                 <p class="mb-0 text-danger">Peter send a message</p>
                                                 15 min ago
@@ -127,11 +117,9 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item px-2 py-2 border border-top-0 border-left-0 border-right-0"
-                                        href="#">
+                                    <a class="dropdown-item px-2 py-2 border border-top-0 border-left-0 border-right-0" href="#">
                                         <div class="media">
-                                            <img src="dist/images/author3.jpg" alt=""
-                                                class="d-flex mr-3 img-fluid rounded-circle">
+                                            <img src="dist/images/author3.jpg" alt="" class="d-flex mr-3 img-fluid rounded-circle">
                                             <div class="media-body">
                                                 <p class="mb-0 text-warning">Bill send a message</p>
                                                 5 min ago
@@ -140,22 +128,20 @@
                                     </a>
                                 </li>
 
-                                <li><a class="dropdown-item text-center py-2" href="#"> Read All Message <i
-                                            class="icon-arrow-right pl-2 small"></i></a></li>
+                                <li><a class="dropdown-item text-center py-2" href="#"> Read All Message <i class="icon-arrow-right pl-2 small"></i></a></li>
                             </ul>
                         </li>
                         <li class="dropdown user-profile align-self-center d-inline-block">
                             <a href="#" class="nav-link py-0" data-toggle="dropdown" aria-expanded="false">
                                 <div class="media">
-                                    <img src="dist/images/author.jpg" alt="" class="d-flex img-fluid rounded-circle"
-                                        width="29">
+                                    <img src="dist/images/author.jpg" alt="" class="d-flex img-fluid rounded-circle" width="29">
                                 </div>
                             </a>
 
                             <div class="dropdown-menu border dropdown-menu-right p-0">
                                 <a href="profile" class="dropdown-item px-2 align-self-center d-flex">
                                     <span class="icon-user mr-2 h6 mb-0"></span> Lihat Profil</a>
-                
+
                                 <div class="dropdown-divider"></div>
                                 <a href="tentang_kami" class="dropdown-item px-2 align-self-center d-flex">
                                     <span class="icon-info mr-2 h6 mb-0"></span> Tentang Kami</a>
@@ -182,31 +168,31 @@
     <div class="sidebar">
         <div class="site-width">
             <!-- START: Menu-->
-            <br>   
+            <br>
             <div style="text-align: center;">
                 <img src="dist/images/contact-3.jpg" width="100" alt="" class="img-fluid rounded-circle"><br><br>
                 <h5>Nama User</h5>
-                <a href="profile"><i class="icon-user"></i>  Lihat Profile</a>
+                <a href="profile"><i class="icon-user"></i> Lihat Profile</a>
             </div>
             <ul id="side-menu" class="sidebar-menu">
                 <li class="dropdown "><a href="#"><i class="icon-home mr-1"></i> Beranda</a>
                     <ul>
-                        <li ><a href="home"><i class="icon-home"></i> Beranda</a></li>
+                        <li><a href="home"><i class="icon-home"></i> Beranda</a></li>
                         <li><a href="barang_ditemukan"><i class="icon-magnifier"></i> Barang Ditemukan</a>
                         </li>
                         <li><a href="barang_hilang"><i class="icon-magnifier"></i> Barang Hilang</a>
                         </li>
-                        
+
 
                     </ul>
                 </li>
                 <li class="dropdown "><a href="#"><i class="icon-menu mr-1"></i> Buat Laporan</a>
                     <ul>
-                        <li ><a href="lapor_kehilangan"><i class="icon-pencil"></i> Lapor Kehilangan</a>
+                        <li><a href="lapor_kehilangan"><i class="icon-pencil"></i> Lapor Kehilangan</a>
                         </li>
-                        <li ><a href="lapor_menemukan"><i class="icon-pencil"></i> Lapor Menemukan</a>
+                        <li><a href="lapor_menemukan"><i class="icon-pencil"></i> Lapor Menemukan</a>
                         </li>
-                        
+
 
                     </ul>
                 </li>
@@ -218,7 +204,7 @@
                         </li>
                         <li><a href="kirim_masukan"><i class="icon-envelope"></i> Kirim Masukan</a>
                         </li>
-                        
+
 
                     </ul>
                 </li>
@@ -249,15 +235,127 @@
                             <li class="breadcrumb-item"><a href="home">Home</a></li>
                             <li class="breadcrumb-item active">Tentang Kami</li>
                         </ol>
-                        
+
                     </div>
-                    
+
                 </div>
             </div>
             <!-- END: Breadcrumbs-->
 
             <!-- START: Card Data-->
-            
+
+            <div class="card">
+                <!-- <div class="card-header  justify-content-between align-items-center">
+                    <h4 class="card-title">Default</h4>
+                </div> -->
+                <div class="card-body">
+
+
+                    <div class="jumbotron">
+                        <h1 class="display-4">Lost N Found Tel-U</h1>
+                        <p class="lead">
+                            Lost N Found Tel-U adalah sebuah aplikasi berbasis website, yang dapat membantu para mahasiswa dan masyarakat Telkom University
+                            dalam mencari barang yang hilang atau menemukan barang yang tertinggal oleh sang pemilik di sekitar Telkom University.
+                        </p>
+                        <!-- <hr class="my-4">
+                        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+                        <p class="lead">
+                            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                        </p> -->
+                    </div>
+                    <center>
+                        <h3>Meet the Team</h3>
+                    </center>
+                    <div class="row">
+                        <div class="col-12 col-lg-6 col-xl-4 mt-3">
+                            <div class="card">
+                                <div class="card-content">
+                                    <div class="card-image business-card">
+                                        <div class="background-image-maker" style="background-image: url(&quot;dist/images/ceif.jpg&quot;);"></div>
+                                        <div class="holder-image">
+                                            <img src="dist/images/ceif.jpg" alt="" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title mb-3 mt-2">Elyas Syahbana</h5>
+                                        <p class="card-text">Phasellus ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia. Phasellus ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia.</p>
+                                        <!-- <div class="row mt-4 mb-3">
+                                            <div class="col-6">
+                                                <b><i class="ion ion-android-call"></i> Phone</b><br>
+                                                +88 123 123 1234
+                                            </div>
+                                            <div class="col-6">
+                                                <b><i class="ion ion-android-pin"></i> Location</b><br>
+                                                Akron, OH 44308
+                                            </div>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 col-xl-4 mt-3">
+                            <div class="card">
+                                <div class="card-content">
+
+
+                                    <div class="card-image business-card">
+                                        <div class="background-image-maker" style="background-image: url(&quot;dist/images/ceif.jpg&quot;);"></div>
+                                        <div class="holder-image">
+                                            <img src="dist/images/ceif.jpg" alt="" class="img-fluid">
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title mb-3 mt-2">M Abduh Husaini B</h5>
+                                        <p class="card-text">Phasellus ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia. Phasellus ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia.</p>
+                                        <!-- <div class="row mt-4 mb-3">
+                                            <div class="col-6">
+                                                <b><i class="ion ion-android-call"></i> Phone</b><br>
+                                                +88 123 123 1234
+                                            </div>
+                                            <div class="col-6">
+                                                <b><i class="ion ion-android-pin"></i> Location</b><br>
+                                                Akron, OH 44308
+                                            </div>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 col-xl-4 mt-3">
+                            <div class="card">
+                                <div class="card-content">
+
+
+                                    <div class="card-image business-card">
+                                        <div class="background-image-maker" style="background-image: url(&quot;dist/images/ceif.jpg&quot;);"></div>
+                                        <div class="holder-image">
+                                            <img src="dist/images/ceif.jpg" alt="" class="img-fluid">
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title mb-3 mt-2">Ilham Ramadhani S</h5>
+                                        <p class="card-text">Phasellus ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia. Phasellus ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia.</p>
+                                        <!-- <div class="row mt-4 mb-3">
+                                            <div class="col-6">
+                                                <b><i class="ion ion-android-call"></i> Phone</b><br>
+                                                +88 123 123 1234
+                                            </div>
+                                            <div class="col-6">
+                                                <b><i class="ion ion-android-pin"></i> Location</b><br>
+                                                Akron, OH 44308
+                                            </div>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
 
             <!-- END: Card DATA-->
         </div>
@@ -283,8 +381,7 @@
                 <p>Subscribe to our newsletter</p>
                 <form class="w-75 my-2 my-lg-0">
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Email" aria-label="search"
-                            aria-describedby="button-addon2">
+                        <input type="text" class="form-control" placeholder="Email" aria-label="search" aria-describedby="button-addon2">
                         <div class="input-group-append">
                             <button class="btn btn-outline-secondary" type="button" id="button-addon2">OK</button>
                         </div>
@@ -295,7 +392,7 @@
             </div>
             <div class="footer2">
                 <p>Jl. Telekomunikasi Terusan Buah Batu, Bandung - 40257, Indonesia</p>
-                
+
             </div>
         </div>
         <!-- END: Footer-->
