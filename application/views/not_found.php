@@ -6,7 +6,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Lost N Found Tel-U</title>
+    <title>Not Found - Lost N Found Tel-U</title>
     <link rel="shortcut icon" href="" />
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
