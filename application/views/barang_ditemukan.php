@@ -11,33 +11,16 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
     <!-- START: Template CSS-->
-    <link rel="stylesheet" href="dist/vendors/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="dist/vendors/jquery-ui/jquery-ui.min.css">
-    <link rel="stylesheet" href="dist/vendors/jquery-ui/jquery-ui.theme.min.css">
-    <link rel="stylesheet" href="dist/vendors/simple-line-icons/css/simple-line-icons.css">
-    <link rel="stylesheet" href="dist/vendors/flags-icon/css/flag-icon.min.css">
-    <!-- END Template CSS-->
-
-    <!-- START: Page CSS-->
-    <link rel="stylesheet" href="dist/vendors/chartjs/Chart.min.css">
-    <!-- END: Page CSS-->
-
-    <!-- START: Page CSS-->
-    <link rel="stylesheet" href="dist/vendors/morris/morris.css">
-    <link rel="stylesheet" href="dist/vendors/weather-icons/css/pe-icon-set-weather.min.css">
-    <link rel="stylesheet" href="dist/vendors/chartjs/Chart.min.css">
-    <link rel="stylesheet" href="dist/vendors/starrr/starrr.css">
-    <link rel="stylesheet" href="dist/vendors/fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="dist/vendors/ionicons/css/ionicons.min.css">
-    <link rel="stylesheet" href="dist/vendors/jquery-jvectormap/jquery-jvectormap-2.0.3.css">
-    <!-- END: Page CSS-->
+    <link rel="stylesheet" href="<?= base_url('dist/vendors/bootstrap/css/bootstrap.min.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('dist/vendors/simple-line-icons/css/simple-line-icons.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('dist/vendors/toastr/toastr.min.css') ?>">
 
     <!-- START: Custom CSS-->
-    <link rel="stylesheet" href="dist/css/main.css">
+    <link rel="stylesheet" href="<?= base_url('dist/css/main.css') ?>">
     <!-- END: Custom CSS-->
 
     <!-- css buatan sendiri -->
-    <link rel="stylesheet" href="dist/css/styles.css">
+    <link rel="stylesheet" href="<?= base_url('dist/css/styles.css') ?>">
     <!-- css buatan sendiri -->
 </head>
 <!-- END Head-->
@@ -53,140 +36,18 @@
     <!-- END: Pre Loader-->
 
     <!-- START: Header-->
-    <div id="header-fix" class="header fixed-top">
-        <div class="site-width">
-            <nav class="navbar navbar-expand-lg  p-0" style="background-color: #a12520;">
-                <div class="navbar-header  h-100 h4 mb-0 align-self-center logo-bar text-left"
-                    style="background-color: #a12520;">
-                    <a href="index" class="horizontal-logo">
-                        <div class="media">
-                            <!-- <img src="img/tes4.png" alt="" class="d-flex img-fluid" width="200"> -->
-                            <span class="h6 font-weight-bold align-self-center mb-0 ml-auto" style="color: black;">Lost
-                                N Found Tel-U</span>
-                        </div>
-                    </a>
-                </div>
-                <div class="navbar-header h4 mb-0 text-center h-100 collapse-menu-bar"
-                    style="background-color: #a12520;">
-                    <a href="#" class="sidebarCollapse" id="collapse"><i class="icon-menu"></i></a>
-                </div>
-
-                <form class="float-left d-none d-lg-block search-form">
-                    <div class="form-group mb-0 position-relative" style="background-color: antiquewhite;">
-                        <input type="text" class="form-control border-0 rounded bg-search pl-5"
-                            placeholder="Cari barang...">
-                        <div class="btn-search position-absolute top-0">
-                            <a href="#"><i class="h6 icon-magnifier"></i></a>
-                        </div>
-                        <a href="#" class="position-absolute close-button mobilesearch d-lg-none" data-toggle="dropdown"
-                            aria-expanded="false"><i class="icon-close h5"></i>
-                        </a>
-
-                    </div>
-                </form>
-                <div class="navbar-right ml-auto h-150">
-                    <ul class="ml-auto p-0 m-0 list-unstyled d-flex top-icon h-100">
-                        <li class="d-inline-block align-self-center  d-block d-lg-none">
-                            <a href="#" class="nav-link mobilesearch" data-toggle="dropdown" aria-expanded="false"><i
-                                    class="icon-magnifier h4"></i>
-                            </a>
-                        </li>
-
-                        <li class="dropdown align-self-center d-inline-block">
-                            <a href="#" class="nav-link" data-toggle="dropdown" aria-expanded="false"><i
-                                    class="icon-bell h4"></i>
-                                <span class="badge badge-default"> <span class="ring">
-                                    </span><span class="ring-point">
-                                    </span> </span>
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-right border   py-0">
-                                <li>
-                                    <a class="dropdown-item px-2 py-2 border border-top-0 border-left-0 border-right-0"
-                                        href="#">
-                                        <div class="media">
-                                            <img src="dist/images/author.jpg" alt=""
-                                                class="d-flex mr-3 img-fluid rounded-circle w-50">
-                                            <div class="media-body">
-                                                <p class="mb-0 text-success">john send a message</p>
-                                                12 min ago
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item px-2 py-2 border border-top-0 border-left-0 border-right-0"
-                                        href="#">
-                                        <div class="media">
-                                            <img src="dist/images/author2.jpg" alt=""
-                                                class="d-flex mr-3 img-fluid rounded-circle">
-                                            <div class="media-body">
-                                                <p class="mb-0 text-danger">Peter send a message</p>
-                                                15 min ago
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item px-2 py-2 border border-top-0 border-left-0 border-right-0"
-                                        href="#">
-                                        <div class="media">
-                                            <img src="dist/images/author3.jpg" alt=""
-                                                class="d-flex mr-3 img-fluid rounded-circle">
-                                            <div class="media-body">
-                                                <p class="mb-0 text-warning">Bill send a message</p>
-                                                5 min ago
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-
-                                <li><a class="dropdown-item text-center py-2" href="#"> Read All Message <i
-                                            class="icon-arrow-right pl-2 small"></i></a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown user-profile align-self-center d-inline-block">
-                            <a href="#" class="nav-link py-0" data-toggle="dropdown" aria-expanded="false">
-                                <div class="media">
-                                    <img src="dist/images/author.jpg" alt="" class="d-flex img-fluid rounded-circle"
-                                        width="29">
-                                </div>
-                            </a>
-
-                            <div class="dropdown-menu border dropdown-menu-right p-0">
-                                <a href="profile" class="dropdown-item px-2 align-self-center d-flex">
-                                    <span class="icon-user mr-2 h6 mb-0"></span> Lihat Profil</a>
-                
-                                <div class="dropdown-divider"></div>
-                                <a href="tentang_kami" class="dropdown-item px-2 align-self-center d-flex">
-                                    <span class="icon-info mr-2 h6 mb-0"></span> Tentang Kami</a>
-                                <a href="#" class="dropdown-item px-2 align-self-center d-flex">
-                                    <span class="icon-support mr-2 h6  mb-0"></span> Bantuan</a>
-                                <a href="kirim_masukan" class="dropdown-item px-2 align-self-center d-flex">
-                                    <span class="icon-envelope mr-2 h6 mb-0"></span> Kirim Masukan</a>
-
-                                <div class="dropdown-divider"></div>
-                                <a href="login" class="dropdown-item px-2 text-danger align-self-center d-flex">
-                                    <span class="icon-logout mr-2 h6  mb-0"></span> Keluar</a>
-                            </div>
-
-                        </li>
-
-                    </ul>
-                </div>
-            </nav>
-        </div>
-    </div>
+    <?php $this->load->view('template/header'); ?>
     <!-- END: Header-->
 
     <!-- START: Main Menu-->
     <div class="sidebar">
         <div class="site-width">
             <!-- START: Menu-->
-            <br>   
+            <br>
             <div style="text-align: center;">
                 <img src="dist/images/contact-3.jpg" width="100" alt="" class="img-fluid rounded-circle"><br><br>
                 <h5>Nama User</h5>
-                <a href="profile"><i class="icon-user"></i>  Lihat Profile</a>
+                <a href="profile"><i class="icon-user"></i> Lihat Profile</a>
             </div>
             <ul id="side-menu" class="sidebar-menu">
                 <li class="dropdown active"><a href="#"><i class="icon-home mr-1"></i> Beranda</a>
@@ -196,7 +57,7 @@
                         </li>
                         <li><a href="barang_hilang"><i class="icon-magnifier"></i> Barang Hilang</a>
                         </li>
-                        
+
 
                     </ul>
                 </li>
@@ -206,7 +67,7 @@
                         </li>
                         <li><a href="lapor_menemukan"><i class="icon-pencil"></i> Lapor Menemukan</a>
                         </li>
-                        
+
 
                     </ul>
                 </li>
@@ -218,7 +79,7 @@
                         </li>
                         <li><a href="kirim_masukan"><i class="icon-envelope"></i> Kirim Masukan</a>
                         </li>
-                        
+
 
                     </ul>
                 </li>
@@ -248,7 +109,7 @@
                             <li class="breadcrumb-item"><a href="home">Home</a></li>
                             <li class="breadcrumb-item active">Barang Ditemukan</li>
                         </ol>
-                        
+
                     </div>
                     <div>
                         <h4>Laporan Terbaru</h4>
@@ -305,7 +166,7 @@
                                             <div class="">Nama Barang: </div>
                                             <div class="">Lokasi: </div>
                                             <div class="">Tanggal: </div>
-                                            
+
                                         </div>
                                         <p class="mb-2" style="text-align: center;"><a href="detail_barang_ditemukan" class="font-weight-bold text-primary">Lihat Selengkapnya</a></p>
                                     </div>
@@ -328,7 +189,7 @@
                                             <div class="">Nama Barang: </div>
                                             <div class="">Lokasi: </div>
                                             <div class="">Tanggal: </div>
-                                            
+
                                         </div>
                                         <p class="mb-2" style="text-align: center;"><a href="detail_barang_ditemukan" class="font-weight-bold text-primary">Lihat Selengkapnya</a></p>
                                     </div>
@@ -351,7 +212,7 @@
                                             <div class="">Nama Barang: </div>
                                             <div class="">Lokasi: </div>
                                             <div class="">Tanggal: </div>
-                                            
+
                                         </div>
                                         <p class="mb-2" style="text-align: center;"><a href="detail_barang_ditemukan" class="font-weight-bold text-primary">Lihat Selengkapnya</a></p>
                                     </div>
@@ -374,169 +235,135 @@
                                             <div class="">Nama Barang: </div>
                                             <div class="">Lokasi: </div>
                                             <div class="">Tanggal: </div>
-                                            
-                                        </div>
-                                        <p class="mb-2" style="text-align: center;"><a href="detail_barang_ditemukan" class="font-weight-bold text-primary">Lihat Selengkapnya</a></p>
-                                    </div>
-                                </div>
 
-                                <div class="col-md-6 col-lg-3 mb-4">
-                                    <div class="position-relative">
-                                        <img src="dist/images/ecommerce-img5.jpg" alt="" class="img-fluid">
-                                        <div class="caption-bg bg-transparent text-right">
-                                            <div class="d-table w-100 h-100 ">
-                                                <div class="d-table-cell align-bottom">
-                                                    <div class="mb-3">
-                                                        <a href="#" class="rounded-left bg-white px-3 py-2 shadow2">Barang Ditemukan</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="pt-3">
-                                        <div class="clearfix">
-                                            <div class="">Nama Barang: </div>
-                                            <div class="">Lokasi: </div>
-                                            <div class="">Tanggal: </div>
-                                            
                                         </div>
                                         <p class="mb-2" style="text-align: center;"><a href="detail_barang_ditemukan" class="font-weight-bold text-primary">Lihat Selengkapnya</a></p>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-lg-3 mb-4">
-                                    <div class="position-relative">
-                                        <img src="dist/images/ecommerce-img6.jpg" alt="" class="img-fluid">
-                                        <div class="caption-bg bg-transparent text-right">
-                                            <div class="d-table w-100 h-100 ">
-                                                <div class="d-table-cell align-bottom">
-                                                    <div class="mb-3">
-                                                        <a href="#" class="rounded-left bg-white px-3 py-2 shadow2">Barang Ditemukan</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="pt-3">
-                                        <div class="clearfix">
-                                            <div class="">Nama Barang: </div>
-                                            <div class="">Lokasi: </div>
-                                            <div class="">Tanggal: </div>
-                                            
-                                        </div>
-                                        <p class="mb-2" style="text-align: center;"><a href="detail_barang_ditemukan" class="font-weight-bold text-primary">Lihat Selengkapnya</a></p>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
-                                    <div class="position-relative">
-                                        <img src="dist/images/ecommerce-img7.jpg" alt="" class="img-fluid">
-                                        <div class="caption-bg bg-transparent text-right">
-                                            <div class="d-table w-100 h-100 ">
-                                                <div class="d-table-cell align-bottom">
-                                                    <div class="mb-3">
-                                                        <a href="#" class="rounded-left bg-white px-3 py-2 shadow2">Barang Ditemukan</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="pt-3">
-                                        <div class="clearfix">
-                                            <div class="">Nama Barang: </div>
-                                            <div class="">Lokasi: </div>
-                                            <div class="">Tanggal: </div>
-                                            
-                                        </div>
-                                        <p class="mb-2" style="text-align: center;"><a href="detail_barang_ditemukan" class="font-weight-bold text-primary">Lihat Selengkapnya</a></p>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-lg-3">
-                                    <div class="position-relative">
-                                        <img src="dist/images/ecommerce-img8.jpg" alt="" class="img-fluid">
-                                        <div class="caption-bg bg-transparent text-right">
-                                            <div class="d-table w-100 h-100 ">
-                                                <div class="d-table-cell align-bottom">
-                                                    <div class="mb-3">
-                                                        <a href="#" class="rounded-left bg-white px-3 py-2 shadow2">Barang Ditemukan</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="pt-3">
-                                        <div class="clearfix">
-                                            <div class="">Nama Barang: </div>
-                                            <div class="">Lokasi: </div>
-                                            <div class="">Tanggal: </div>
-                                            
-                                        </div>
-                                        <p class="mb-2" style="text-align: center;"><a href="detail_barang_ditemukan" class="font-weight-bold text-primary">Lihat Selengkapnya</a></p>
-                                    </div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-12 col-sm-12">
-                                    <nav>
-                                        <ul class="pagination justify-content-center">
-                                            <li class="page-item disabled">
-                                                <a class="page-link" href="#" tabindex="-1">Previous</a>
-                                            </li>
-                                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                            <li class="page-item">
-                                                <a class="page-link" href="#">Next</a>
-                                            </li>
-                                        </ul>
-                                    </nav>
+
+                            <div class="col-md-6 col-lg-3 mb-4">
+                                <div class="position-relative">
+                                    <img src="dist/images/ecommerce-img5.jpg" alt="" class="img-fluid">
+                                    <div class="caption-bg bg-transparent text-right">
+                                        <div class="d-table w-100 h-100 ">
+                                            <div class="d-table-cell align-bottom">
+                                                <div class="mb-3">
+                                                    <a href="#" class="rounded-left bg-white px-3 py-2 shadow2">Barang Ditemukan</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pt-3">
+                                    <div class="clearfix">
+                                        <div class="">Nama Barang: </div>
+                                        <div class="">Lokasi: </div>
+                                        <div class="">Tanggal: </div>
+
+                                    </div>
+                                    <p class="mb-2" style="text-align: center;"><a href="detail_barang_ditemukan" class="font-weight-bold text-primary">Lihat Selengkapnya</a></p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3 mb-4">
+                                <div class="position-relative">
+                                    <img src="dist/images/ecommerce-img6.jpg" alt="" class="img-fluid">
+                                    <div class="caption-bg bg-transparent text-right">
+                                        <div class="d-table w-100 h-100 ">
+                                            <div class="d-table-cell align-bottom">
+                                                <div class="mb-3">
+                                                    <a href="#" class="rounded-left bg-white px-3 py-2 shadow2">Barang Ditemukan</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pt-3">
+                                    <div class="clearfix">
+                                        <div class="">Nama Barang: </div>
+                                        <div class="">Lokasi: </div>
+                                        <div class="">Tanggal: </div>
+
+                                    </div>
+                                    <p class="mb-2" style="text-align: center;"><a href="detail_barang_ditemukan" class="font-weight-bold text-primary">Lihat Selengkapnya</a></p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+                                <div class="position-relative">
+                                    <img src="dist/images/ecommerce-img7.jpg" alt="" class="img-fluid">
+                                    <div class="caption-bg bg-transparent text-right">
+                                        <div class="d-table w-100 h-100 ">
+                                            <div class="d-table-cell align-bottom">
+                                                <div class="mb-3">
+                                                    <a href="#" class="rounded-left bg-white px-3 py-2 shadow2">Barang Ditemukan</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pt-3">
+                                    <div class="clearfix">
+                                        <div class="">Nama Barang: </div>
+                                        <div class="">Lokasi: </div>
+                                        <div class="">Tanggal: </div>
+
+                                    </div>
+                                    <p class="mb-2" style="text-align: center;"><a href="detail_barang_ditemukan" class="font-weight-bold text-primary">Lihat Selengkapnya</a></p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="position-relative">
+                                    <img src="dist/images/ecommerce-img8.jpg" alt="" class="img-fluid">
+                                    <div class="caption-bg bg-transparent text-right">
+                                        <div class="d-table w-100 h-100 ">
+                                            <div class="d-table-cell align-bottom">
+                                                <div class="mb-3">
+                                                    <a href="#" class="rounded-left bg-white px-3 py-2 shadow2">Barang Ditemukan</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pt-3">
+                                    <div class="clearfix">
+                                        <div class="">Nama Barang: </div>
+                                        <div class="">Lokasi: </div>
+                                        <div class="">Tanggal: </div>
+
+                                    </div>
+                                    <p class="mb-2" style="text-align: center;"><a href="detail_barang_ditemukan" class="font-weight-bold text-primary">Lihat Selengkapnya</a></p>
                                 </div>
                             </div>
                         </div>
+                        <div class="row">
+                            <div class="col-12 col-sm-12">
+                                <nav>
+                                    <ul class="pagination justify-content-center">
+                                        <li class="page-item disabled">
+                                            <a class="page-link" href="#" tabindex="-1">Previous</a>
+                                        </li>
+                                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">Next</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
                     </div>
-
-
                 </div>
+
 
             </div>
 
-            <!-- END: Card DATA-->
+        </div>
+
+        <!-- END: Card DATA-->
         </div>
         <br><br><br>
         <!-- START: Footer-->
-        <div class="footer">
-            <div class="footer2">
-                <a class="" href="#">
-                    <img src="" width="240" alt="" loading="lazy">
-                </a>
-            </div>
-            <div class="">
-                <p><a href="Tentang_Kami.html" title="" class="putih">About Us</a></p>
-                <p><a href="" title="" class="putih">Contact</a></p>
-                <p><a href="" title="" class="putih">Terms & conditions</a></p>
-            </div>
-            <div class="">
-                <p><a href="" title="" class="putih">Facebook</a></p>
-                <p><a href="" title="" class="putih">Website</a></p>
-                <p><a href="" title="" class="putih">Instagram</a></p>
-            </div>
-            <div class="">
-                <p>Subscribe to our newsletter</p>
-                <form class="w-75 my-2 my-lg-0">
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Email" aria-label="search"
-                            aria-describedby="button-addon2">
-                        <div class="input-group-append">
-                            <button class="btn btn-outline-secondary" type="button" id="button-addon2">OK</button>
-                        </div>
-                    </div>
-
-
-                </form>
-            </div>
-            <div class="footer2">
-                <p>Jl. Telekomunikasi Terusan Buah Batu, Bandung - 40257, Indonesia</p>
-                
-            </div>
-        </div>
+        <?php $this->load->view('template/footer'); ?>
         <!-- END: Footer-->
 
 
@@ -553,41 +380,41 @@
 
 
     <!-- START: Template JS-->
-    <script src="dist/vendors/jquery/jquery-3.3.1.min.js"></script>
-    <script src="dist/vendors/jquery-ui/jquery-ui.min.js"></script>
-    <script src="dist/vendors/moment/moment.js"></script>
-    <script src="dist/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="dist/vendors/slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="<?php echo base_url('dist/vendors/jquery/jquery-3.3.1.min.js') ?>"></script>
+    <script src="<?php echo base_url('dist/vendors/jquery-ui/jquery-ui.min.js') ?>"></script>
+    <script src="<?php echo base_url('dist/vendors/moment/moment.js') ?>"></script>
+    <script src="<?php echo base_url('dist/vendors/bootstrap/js/bootstrap.bundle.min.js') ?>"></script>
+    <script src="<?php echo base_url('dist/vendors/slimscroll/jquery.slimscroll.min.js') ?>"></script>
     <!-- END: Template JS-->
 
     <!-- START: APP JS-->
-    <script src="dist/js/app.js"></script>
+    <script src="<?php echo base_url('dist/js/app.js') ?>"></script>
     <!-- END: APP JS-->
 
     <!-- START: Page Vendor JS-->
-    <script src="dist/vendors/raphael/raphael.min.js"></script>
-    <script src="dist/vendors/morris/morris.min.js"></script>
-    <script src="dist/vendors/chartjs/Chart.min.js"></script>
-    <script src="dist/vendors/starrr/starrr.js"></script>
-    <script src="dist/vendors/jquery-flot/jquery.canvaswrapper.js"></script>
-    <script src="dist/vendors/jquery-flot/jquery.colorhelpers.js"></script>
-    <script src="dist/vendors/jquery-flot/jquery.flot.js"></script>
-    <script src="dist/vendors/jquery-flot/jquery.flot.saturated.js"></script>
-    <script src="dist/vendors/jquery-flot/jquery.flot.browser.js"></script>
-    <script src="dist/vendors/jquery-flot/jquery.flot.drawSeries.js"></script>
-    <script src="dist/vendors/jquery-flot/jquery.flot.uiConstants.js"></script>
-    <script src="dist/vendors/jquery-flot/jquery.flot.legend.js"></script>
-    <script src="dist/vendors/jquery-flot/jquery.flot.pie.js"></script>
-    <script src="dist/vendors/chartjs/Chart.min.js"></script>
-    <script src="dist/vendors/jquery-jvectormap/jquery-jvectormap-2.0.3.min.js"></script>
-    <script src="dist/vendors/jquery-jvectormap/jquery-jvectormap-world-mill.js"></script>
-    <script src="dist/vendors/jquery-jvectormap/jquery-jvectormap-de-merc.js"></script>
-    <script src="dist/vendors/jquery-jvectormap/jquery-jvectormap-us-aea.js"></script>
-    <script src="dist/vendors/apexcharts/apexcharts.min.js"></script>
+    <script src="<?php echo base_url('dist/vendors/raphael/raphael.min.js') ?>"></script>
+    <script src="<?php echo base_url('dist/vendors/morris/morris.min.js') ?>"></script>
+    <script src="<?php echo base_url('dist/vendors/chartjs/Chart.min.js') ?>"></script>
+    <script src="<?php echo base_url('dist/vendors/starrr/starrr.js') ?>"></script>
+    <script src="<?php echo base_url('dist/vendors/jquery-flot/jquery.canvaswrapper.js') ?>"></script>
+    <script src="<?php echo base_url('dist/vendors/jquery-flot/jquery.colorhelpers.js') ?>"></script>
+    <script src="<?php echo base_url('dist/vendors/jquery-flot/jquery.flot.js') ?>"></script>
+    <script src="<?php echo base_url('dist/vendors/jquery-flot/jquery.flot.saturated.js') ?>"></script>
+    <script src="<?php echo base_url('dist/vendors/jquery-flot/jquery.flot.browser.js') ?>"></script>
+    <script src="<?php echo base_url('dist/vendors/jquery-flot/jquery.flot.drawSeries.js') ?>"></script>
+    <script src="<?php echo base_url('dist/vendors/jquery-flot/jquery.flot.uiConstants.js') ?>"></script>
+    <script src="<?php echo base_url('dist/vendors/jquery-flot/jquery.flot.legend.js') ?>"></script>
+    <script src="<?php echo base_url('dist/vendors/jquery-flot/jquery.flot.pie.js') ?>"></script>
+    <script src="<?php echo base_url('dist/vendors/chartjs/Chart.min.js') ?>"></script>
+    <script src="<?php echo base_url('dist/vendors/jquery-jvectormap/jquery-jvectormap-2.0.3.min.js') ?>"></script>
+    <script src="<?php echo base_url('dist/vendors/jquery-jvectormap/jquery-jvectormap-world-mill.js') ?>"></script>
+    <script src="<?php echo base_url('dist/vendors/jquery-jvectormap/jquery-jvectormap-de-merc.js') ?>"></script>
+    <script src="<?php echo base_url('dist/vendors/jquery-jvectormap/jquery-jvectormap-us-aea.js') ?>"></script>
+    <script src="<?php echo base_url('dist/vendors/apexcharts/apexcharts.min.js') ?>"></script>
     <!-- END: Page Vendor JS-->
 
     <!-- START: Page JS-->
-    <script src="dist/js/home.script.js"></script>
+    <script src="<?php echo base_url('dist/js/home.script.js') ?>"></script>
     <!-- END: Page JS-->
 </body>
 <!-- END: Body-->
