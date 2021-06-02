@@ -11,13 +11,13 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
     <!-- START: Template CSS-->
-	<link rel="stylesheet" href="<?= base_url('dist/vendors/bootstrap/css/bootstrap.min.css') ?>">
-	<link rel="stylesheet" href="<?= base_url('dist/vendors/simple-line-icons/css/simple-line-icons.css') ?>">
-	<link rel="stylesheet" href="<?= base_url('dist/vendors/toastr/toastr.min.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('dist/vendors/bootstrap/css/bootstrap.min.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('dist/vendors/simple-line-icons/css/simple-line-icons.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('dist/vendors/toastr/toastr.min.css') ?>">
 
-	<!-- START: Custom CSS-->
-	<link rel="stylesheet" href="<?= base_url('dist/css/main.css') ?>">
-	<!-- END: Custom CSS-->
+    <!-- START: Custom CSS-->
+    <link rel="stylesheet" href="<?= base_url('dist/css/main.css') ?>">
+    <!-- END: Custom CSS-->
 </head>
 <!-- END Head-->
 
@@ -28,32 +28,32 @@
     <div class="container">
         <div class="row vh-100 justify-content-between align-items-center">
             <div class="col-12">
-                <form action="post" class="row row-eq-height lockscreen  mt-5 mb-5">
-                    <div class="lock-image col-12 col-sm-5" style="background-image: url('dist/images/portfolio13.jpg');"></div>
+                <form action="<?php echo base_url(); ?>Login/Auth_Login" method="POST" class="row row-eq-height lockscreen  mt-5 mb-5">
+                    <div class="lock-image col-12 col-sm-5" style="background-image: <?php echo base_url() ?> url('dist/images/portfolio13.jpg');"></div>
                     <div class="login-form col-12 col-sm-7">
                         <h4>SSO Login</h4>
                         <div class="form-group mb-3">
                             <label for="usermail">Username SSO</label>
-                            <input class="form-control" type="text" id="usermail" required="" placeholder="Masukkan username">
+                            <input class="form-control" type="text" name="username" required="" placeholder="Masukkan username">
                         </div>
 
                         <div class="form-group mb-3">
                             <label for="password">Password</label>
-                            <input class="form-control" type="password" required="" id="password" placeholder="Masukkan Password">
+                            <input class="form-control" type="password" required="" name="password" placeholder="Masukkan Password">
                         </div>
 
                         <div class="form-group mb-3">
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="checkbox-signin" checked="">
-                                <label class="custom-control-label" for="checkbox-signin">Remember me</label>
-                            </div>
+                            <?php if (isset($error)) {
+                                echo "<div class='error label text-danger'>$error</div>";
+                            } ?>
                         </div>
+
 
                         <div class="form-group mb-0">
-                            <a type="button" href="home" class="btn btn-primary btn-block mb-2" id="tombol_login">LOGIN</a>
+                            <button type="submit" class="btn btn-primary btn-block mb-2" id="tombol_login">LOGIN</button>
                         </div>
 
-                        
+
                     </div>
                 </form>
             </div>
@@ -71,7 +71,7 @@
 
     <!-- END: Template JS-->
 
-    
+
 </body>
 <!-- END: Body-->
 
