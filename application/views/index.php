@@ -57,8 +57,8 @@ $css = base_url('dist/css');
             <br>
             <div style="text-align: center;">
                 <img src="dist/images/contact-3.jpg" width="100" alt="" class="img-fluid rounded-circle"><br><br>
-                <h5>Nama User</h5>
-                <a href="profile"><i class="icon-user"></i> Lihat Profile</a>
+                <h5> <?php echo $this->session->userdata('username')  ?></h5>
+                <a href="profile"><i class="icon-user"></i>Lihat Profile</a>
             </div>
             <ul id="side-menu" class="sidebar-menu">
                 <li class="dropdown active"><a href="#"><i class="icon-home mr-1"></i> Beranda</a>

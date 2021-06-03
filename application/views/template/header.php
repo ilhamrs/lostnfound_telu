@@ -97,7 +97,7 @@
                                 <span class="icon-envelope mr-2 h6 mb-0"></span> Kirim Masukan</a>
 
                             <div class="dropdown-divider"></div>
-                            <a href="<?php echo site_url('Login/index'); ?>" class="dropdown-item px-2 text-danger align-self-center d-flex">
+                            <a href="<?php echo site_url('Login/logout'); ?>" class="dropdown-item px-2 text-danger align-self-center d-flex">
                                 <span class="icon-logout mr-2 h6  mb-0"></span> Keluar</a>
                         </div>
 

@@ -12,7 +12,16 @@ class M_Login extends CI_Model
 
         $query = $this->db->get();
         if ($query->num_rows() == 1) {
-            return $query->result();
+            $data = $query->row();
+            $dataDiri = array(
+                'Nama_Lengkap' => $data->Nama_Lengkap,
+                'username' => $data->username,
+                'Email'     => $data->Email,
+
+                'status'    => 'login'
+            );
+            $this->session->set_userdata($dataDiri);
+            return true;
         } else {
             return false;
         }
