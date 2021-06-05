@@ -34,7 +34,7 @@ class M_Laporan extends CI_Model
         $this->nama_barang = $post["nama_barang"];
         $this->kategori = $post["kategori"];
         $this->lokasi = $post["lokasi"];
-        $this->tgl_postingan = time();
+        $this->tgl_postingan = date("Y-m-d H:i:s");
         $this->tgl_kehilangan = $post["tgl_kehilangan"];
         $this->deskripsi = $post["deskripsi"];
         $this->no_telp = $post["no_telp"];
@@ -55,7 +55,7 @@ class M_Laporan extends CI_Model
         $this->nama_barang = $post["nama_barang"];
         $this->kategori = $post["kategori"];
         $this->lokasi = $post["lokasi"];
-        $this->tgl_postingan = time();
+        $this->tgl_postingan = date("Y-m-d H:i:s");
         $this->tgl_kehilangan = $post["tgl_kehilangan"];
         $this->deskripsi = $post["deskripsi"];
         $this->no_telp = $post["no_telp"];
