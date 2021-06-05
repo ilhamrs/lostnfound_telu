@@ -8,7 +8,9 @@ class M_Laporan extends CI_Model
     //public $id_akun;
     public $username;
     //public $foto;
-    public $image = "default.jpg";
+    public $image1 = "default.jpg";
+    public $image2 = "default.jpg";
+    public $image3 = "default.jpg";
     public $tipe_postingan;
     public $nama_barang;
     public $kategori;
@@ -25,7 +27,9 @@ class M_Laporan extends CI_Model
         //$this->id_akun = "4";
         $this->username = $username;
         //$this->foto = "";
-        $this->image = $this->_uploadImage();
+        $this->image1 = $this->_uploadImage('foto1');
+        $this->image2 = $this->_uploadImage('foto2');
+        $this->image3 = $this->_uploadImage('foto3');
         $this->tipe_postingan = "Kehilangan";
         $this->nama_barang = $post["nama_barang"];
         $this->kategori = $post["kategori"];
@@ -44,7 +48,9 @@ class M_Laporan extends CI_Model
         //$this->id_akun = "4";
         $this->username = $username;
         //$this->foto = "";
-        $this->image = $this->_uploadImage();
+        $this->image1 = $this->_uploadImage('foto1');
+        $this->image2 = $this->_uploadImage('foto2');
+        $this->image3 = $this->_uploadImage('foto3');
         $this->tipe_postingan = "Menemukan";
         $this->nama_barang = $post["nama_barang"];
         $this->kategori = $post["kategori"];
@@ -56,7 +62,7 @@ class M_Laporan extends CI_Model
         return $this->db->insert($this->_table, $this);
     }
 
-    private function _uploadImage()
+    private function _uploadImage($foto)
     {
         $config['upload_path']          = './uploads/';
         $config['allowed_types']        = 'gif|jpg|png';
@@ -68,7 +74,7 @@ class M_Laporan extends CI_Model
 
         $this->load->library('upload', $config);
 
-        if ($this->upload->do_upload('foto')) {
+        if ($this->upload->do_upload($foto)) {
             return $this->upload->data("file_name");
         }
 

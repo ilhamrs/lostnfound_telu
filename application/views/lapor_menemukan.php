@@ -130,9 +130,21 @@
                                                 <h4 class="card-title">Foto Barang</h4>
                                             </div>
                                             <div class="card-body">
-                                                <div class="custom-file overflow-hidden rounded-pill mb-5">
-                                                    <input id="customFile1" name="foto" type="file" class="custom-file-input rounded-pill">
-                                                    <label for="customFile1" class="custom-file-label rounded-pill">Choose file</label>
+                                                <div class="custom-file rounded-pill mb-5">
+                                                    <input id="customFile1" name="foto1" type="file" class="custom-file-input rounded-pill">
+                                                    <label for="customFile1" class="custom-file-label rounded-pill">Foto 1</label>
+                                                </div>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="custom-file rounded-pill mb-5">
+                                                    <input id="customFile1" name="foto2" type="file" class="custom-file-input rounded-pill">
+                                                    <label for="customFile1" class="custom-file-label rounded-pill">Foto 2</label>
+                                                </div>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="custom-file rounded-pill mb-5">
+                                                    <input id="customFile1" name="foto3" type="file" class="custom-file-input rounded-pill">
+                                                    <label for="customFile1" class="custom-file-label rounded-pill">Foto 3</label>
                                                 </div>
                                             </div>
                                         </div>
