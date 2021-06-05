@@ -20,8 +20,12 @@ class Login extends CI_Controller
 		$username = $this->input->POST('username');
 		$password = $this->input->POST('password');
 		$cekUser = $this->M_Login->Login($username, $password, 'akun_pengguna');
+		$arraydata = array(
+			'status'  => 'login',
+			'username'	=> $username
+		);
 		if ($cekUser) {
-			$this->session->set_userdata('status', 'login');
+			$this->session->set_userdata($arraydata);
 			redirect('Home');
 		} else {
 			$data['error'] = 'Username dan Password Salah!!';

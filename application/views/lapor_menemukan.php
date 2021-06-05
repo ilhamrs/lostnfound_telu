@@ -11,13 +11,13 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
     <!-- START: Template CSS-->
-	<link rel="stylesheet" href="<?= base_url('dist/vendors/bootstrap/css/bootstrap.min.css') ?>">
-	<link rel="stylesheet" href="<?= base_url('dist/vendors/simple-line-icons/css/simple-line-icons.css') ?>">
-	<link rel="stylesheet" href="<?= base_url('dist/vendors/toastr/toastr.min.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('dist/vendors/bootstrap/css/bootstrap.min.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('dist/vendors/simple-line-icons/css/simple-line-icons.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('dist/vendors/toastr/toastr.min.css') ?>">
 
-	<!-- START: Custom CSS-->
-	<link rel="stylesheet" href="<?= base_url('dist/css/main.css') ?>">
-	<!-- END: Custom CSS-->
+    <!-- START: Custom CSS-->
+    <link rel="stylesheet" href="<?= base_url('dist/css/main.css') ?>">
+    <!-- END: Custom CSS-->
 
     <!-- css buatan sendiri -->
     <link rel="stylesheet" href="<?= base_url('dist/css/styles.css') ?>">
@@ -43,31 +43,31 @@
     <div class="sidebar">
         <div class="site-width">
             <!-- START: Menu-->
-            <br>   
+            <br>
             <div style="text-align: center;">
                 <img src="dist/images/contact-3.jpg" width="100" alt="" class="img-fluid rounded-circle"><br><br>
                 <h5>Nama User</h5>
-                <a href="profile"><i class="icon-user"></i>  Lihat Profile</a>
+                <a href="profile"><i class="icon-user"></i> Lihat Profile</a>
             </div>
             <ul id="side-menu" class="sidebar-menu">
                 <li class="dropdown "><a href="#"><i class="icon-home mr-1"></i> Beranda</a>
                     <ul>
-                        <li ><a href="home"><i class="icon-home"></i> Beranda</a></li>
+                        <li><a href="home"><i class="icon-home"></i> Beranda</a></li>
                         <li><a href="barang_ditemukan"><i class="icon-magnifier"></i> Barang Ditemukan</a>
                         </li>
                         <li><a href="barang_hilang"><i class="icon-magnifier"></i> Barang Hilang</a>
                         </li>
-                        
+
 
                     </ul>
                 </li>
                 <li class="dropdown active"><a href="#"><i class="icon-menu mr-1"></i> Buat Laporan</a>
                     <ul>
-                        <li ><a href="lapor_kehilangan"><i class="icon-pencil"></i> Lapor Kehilangan</a>
+                        <li><a href="lapor_kehilangan"><i class="icon-pencil"></i> Lapor Kehilangan</a>
                         </li>
                         <li class="active"><a href="lapor_menemukan"><i class="icon-pencil"></i> Lapor Menemukan</a>
                         </li>
-                        
+
 
                     </ul>
                 </li>
@@ -79,7 +79,7 @@
                         </li>
                         <li><a href="kirim_masukan"><i class="icon-envelope"></i> Kirim Masukan</a>
                         </li>
-                        
+
 
                     </ul>
                 </li>
@@ -110,9 +110,9 @@
                             <li class="breadcrumb-item"><a href="home">Home</a></li>
                             <li class="breadcrumb-item active">Lapor Menemukan</li>
                         </ol>
-                        
+
                     </div>
-                    
+
                 </div>
             </div>
             <!-- END: Breadcrumbs-->
@@ -121,89 +121,84 @@
             <div class="row">
                 <div class="col-12 mt-3">
                     <div class="card">
-                        <!-- <div class="card-header  justify-content-between align-items-center">
-                            <a type="button" class="btn btn-primary"
-                                href="#">Kembali</a>
-                        </div> -->
                         <div class="card-body">
-                            <div class="row col-12">
-                                <div class="col-12 col-sm-4">
-                                    <div class="card">
-                                        <div class="card-header d-flex justify-content-between align-items-center">
-                                            <h4 class="card-title">Foto Barang</h4>
-                                        </div>
-                                        <div class="card-body">
-                                            <form action="http://html.designstream.co.in/file-upload"
-                                                class="dropzone dropzone-primary dz-clickable">
-                                                <div class="dz-default dz-message"><span>Drop photos here to
-                                                        upload</span></div>
-                                            </form>
+                            <form action="<?php echo base_url(); ?>lapor_menemukan/add" method="POST" enctype="multipart/form-data">
+                                <div class="row col-12">
+                                    <div class="col-12 col-sm-4">
+                                        <div class="card">
+                                            <div class="card-header d-flex justify-content-between align-items-center">
+                                                <h4 class="card-title">Foto Barang</h4>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="custom-file overflow-hidden rounded-pill mb-5">
+                                                    <input id="customFile1" name="foto" type="file" class="custom-file-input rounded-pill">
+                                                    <label for="customFile1" class="custom-file-label rounded-pill">Choose file</label>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-12 col-sm-8">
-                                    <form>
+                                    <div class="col-12 col-sm-8">
                                         <div class="form-group row">
-                                            <label for="nama_produk" class="col-sm-2 col-form-label">Nama Barang</label>
+                                            <label for="nama_barang" class="col-sm-2 col-form-label">Nama Barang</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" id="nama_barang"
-                                                    placeholder="Nama Barang">
+                                                <input type="text" class="form-control" id="nama_barang" name="nama_barang" placeholder="Nama Barang">
                                             </div>
                                         </div>
                                         <div class="form-group row">
                                             <label for="lokasi" class="col-sm-2 col-form-label">Lokasi</label>
                                             <div class="col-sm-10">
-                                                <select id="lokasi" class="form-control">
+                                                <select id="lokasi" name="lokasi" class="form-control">
                                                     <option selected="">Lokasi...</option>
-                                                    <option>...</option>
+                                                    <option value="GKU">GKU</option>
+                                                    <option value="MSU">MSU</option>
                                                 </select>
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label for="tanggal" class="col-sm-2 col-form-label">Tgl Menemukan</label>
+                                            <label for="tgl_kehilangan" class="col-sm-2 col-form-label">Tgl Kehilangan</label>
                                             <div class="col-sm-10">
-                                                <input type="date" class="form-control datepicker hasDatepicker" id="tanggal">
-                                            </div>      
+                                                <input type="date" name="tgl_kehilangan" class="form-control datepicker hasDatepicker" id="tgl_kehilangan">
+                                            </div>
                                         </div>
                                         <div class="form-group row">
                                             <label for="kategori" class="col-sm-2 col-form-label">Kategori</label>
                                             <div class="col-sm-10">
-                                                <select id="kategori" class="form-control">
+                                                <select id="kategori" name="kategori" class="form-control">
                                                     <option selected="">Kategori...</option>
-                                                    <option>...</option>
+                                                    <option value="Alat tulis">Alat tulis</option>
+                                                    <option value="Surat berharga">Surat berharga</option>
                                                 </select>
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label for="kontak" class="col-sm-2 col-form-label">Kontak</label>
+                                            <label for="no_telp" class="col-sm-2 col-form-label">Kontak</label>
                                             <div class="col-sm-10">
-                                                <input type="number" class="form-control" id="kontak"
-                                                    placeholder="081234567890">
+                                                <input type="number" name="no_telp" class="form-control" id="no_telp" placeholder="081234567890">
                                             </div>
                                         </div>
                                         <div class="form-group row">
                                             <label for="deskripsi" class="col-sm-2 col-form-label">Deskripsi</label>
                                             <div class="col-sm-10">
-                                                <textarea name="deskripsi" id="deskripsi" cols="80" rows="5"
-                                                    class="form-control"></textarea>
+                                                <textarea name="deskripsi" id="deskripsi" cols="80" rows="5" class="form-control"></textarea>
                                             </div>
                                         </div>
                                         <div class="form-group row">
                                             <div class="col-sm-10">
-                                                <button type="submit" class="btn btn-primary btn-lg">Upload Laporan</button>
+                                                <button type="submit" value="Save" class="btn btn-primary btn-lg">Upload
+                                                    Laporan</button>
                                             </div>
                                         </div>
-                                    </form>
 
+                                    </div>
                                 </div>
-                            </div>
+                            </form>
 
                         </div>
                     </div>
 
                 </div>
             </div>
-            
+
 
             <!-- END: Card DATA-->
         </div>
