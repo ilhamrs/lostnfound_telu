@@ -24,6 +24,8 @@ class M_Komentar extends CI_Model
     public function getCommentByIDPost($id)
     {
         $this->db->where('ID_posting', $id);
+        $this->db->join('akun_pengguna', 'tb_komentar.ID_akun = akun_pengguna.ID_akun');
+        $this->db->order_by('date', 'ASC');
         $query = $this->db->get($this->_table);
         return $query->result();
     }

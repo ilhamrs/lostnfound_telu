@@ -82,11 +82,17 @@
                                 <div class="col-12 col-sm-8">
                                     <form>
                                         <!-- //code mengambil data by ID -->
-
+                                        
                                         <div class="form-group row">
                                             <label for="nama_produk" class="col-sm-2 col-form-label">Nama barang</label>
                                             <div class="col-sm-10">
                                                 <input disabled type="text" class="form-control" id="nama_barang" placeholder="<?php echo $I->nama_barang ?>">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="pelapor" class="col-sm-2 col-form-label">Pelapor</label>
+                                            <div class="col-sm-10">
+                                                <input disabled type="text" class="form-control" id="pelapor" placeholder="<?php echo $I->Nama_Lengkap ?>">
                                             </div>
                                         </div>
                                         <div class="form-group row">
@@ -144,7 +150,7 @@
                             <div class="float-sm-right float-none mb-0 my-3 my-sm-0"> <a href="#" class="text-primary"></a>
                                 <i class="icofont icofont-bubble-left pr-1"></i> <?php echo $Comment->date ?></a>
                             </div>
-                            <h6 class="mb-1 font-weight-bold"><?php echo $Comment->ID_akun ?></h6>
+                            <h6 class="mb-1 font-weight-bold"><?php echo $Comment->Nama_Lengkap ?></h6>
                             <?php echo $Comment->isi_komentar ?>
                         </div>
                     </div>
