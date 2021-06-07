@@ -65,8 +65,54 @@
                                         <div class="col-sm-10">
                                             <select id="lokasi" name="lokasi" class="form-control">
                                                 <option selected="">Lokasi...</option>
-                                                <option value="GKU">GKU</option>
-                                                <option value="MSU">MSU</option>
+                                                <option value="Gd. Bangkit">Gd. Bangkit</option>
+                                                <option value="Gd. Lingian">Gd. Lingian</option>
+                                                <option value="Gd. Panehan">Gd. Panehan</option>
+                                                <option value="Gd. Barung">Gd. Barung</option>
+                                                <option value="Gd. Ararkula">Gd. Ararkula</option>
+                                                <option value="Gd. Deli">Gd. Deli</option>
+                                                <option value="Gd. Karang">Gd. Karang</option>
+                                                <option value="Gd. Mangudu">Gd. Mangudu</option>
+                                                <option value="Gd. Panambulai">Gd. Panambulai</option>
+                                                <option value="Gd. Kultubai Utara">Gd. Kultubai Utara</option>
+                                                <option value="Gd. Kultubai Selatan">Gd. Kultubai Selatan</option>
+                                                <option value="Gd. Miossu">Gd. Miossu</option>
+                                                <option value="Gd. Maratua">Gd. Maratua</option>
+                                                <option value="Gd. Marore">Gd. Marore</option>
+                                                <option value="Gd. Miangas">Gd. Miangas</option>
+                                                <option value="Gd. Marampit">Gd. Marampit</option>
+                                                <option value="Gd. Mangkai">Gd. Mangkai</option>
+                                                <option value="Gd. Manterawu">Gd. Manterawu</option>
+                                                <option value="Gd. Kawalusu">Gd. Kawalusu</option>
+                                                <option value="Gd. Intata">Gd. Intata</option>
+                                                <option value="Gd. Sebatik">Gd. Sebatik</option>
+                                                <option value="Gd. Selaru">Gd. Selaru</option>
+                                                <option value="Grha Wiyata Cacuk Sudarijanto-A">Grha Wiyata Cacuk Sudarijanto-A</option>
+                                                <option value="Grha Wiyata Cacuk Sudarijanto-B">Grha Wiyata Cacuk Sudarijanto-B</option>
+                                                <option value="Gd. Tokong Nanas">Gd. Tokong Nanas</option>
+                                                <option value="Masjid Syamsul Ulum">Masjid Syamsul Ulum</option>
+                                                <option value="Gd. Alor">Gd. Alor</option>
+                                                <option value="Gd. Karaweira">Gd. Karaweira</option>
+                                                <option value="Gd. Pelampong">Gd. Pelampong</option>
+                                                <option value="Gd. Damar">Gd. Damar</option>
+                                                <option value="Gd. Benggala">Gd. Benggala</option>
+                                                <option value="Gd. Laag">Gd. Laag</option>
+                                                <option value="Gd. Larat">Gd. Larat</option>
+                                                <option value="Gd. Leti">Gd. Leti</option>
+                                                <option value="Gd. Liki">Gd. Liki</option>
+                                                <option value="Gd. Lingian">Gd. Lingian</option>
+                                                <option value="Gd. Liran">Gd. Liran</option>
+                                                <option value="Gd. Sambit">Gd. Sambit</option>
+                                                <option value="Gd. Sebetul">Gd. Sebetul</option>
+                                                <option value="Gd. Sekatung">Gd. Sekatung</option>
+                                                <option value="Gd. Sekel">Gd. Sekel</option>
+                                                <option value="Gd. Dana">Gd. Dana</option>
+                                                <option value="Gd. Dona">Gd. Dona</option>
+                                                <option value="Gd. Enggano">Gd. Enggano</option>
+                                                <option value="Gd. Enu">Gd. Enu</option>
+                                                <option value="Gd. Fani">Gd. Fani</option>
+                                                <option value="Gd. Fanildo">Gd. Fanildo</option>
+                                                <option value="Gd. Batek">Gd. Batek</option>
                                             </select>
                                         </div>
                                     </div>
@@ -83,6 +129,12 @@
                                                 <option selected="">Kategori...</option>
                                                 <option value="Alat tulis">Alat tulis</option>
                                                 <option value="Surat berharga">Surat berharga</option>
+                                                <option value="Alat elektronik">Alat elektronik</option>
+                                                <option value="Handphone dan aksesoris">Handphone dan aksesoris</option>
+                                                <option value="Laptop dan Aksesoris">Laptop dan Aksesoris</option>
+                                                <option value="Kartu identitas">Kartu identitas</option>
+                                                <option value="Dompet">Dompet</option>
+                                                <option value="Lainnya">Lainnya</option>
                                             </select>
                                         </div>
                                     </div>
