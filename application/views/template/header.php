@@ -1,3 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- START: Head-->
+
+<!-- Mirrored from html.designstream.co.in/pick/html/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 12 Jul 2020 01:57:17 GMT -->
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lost N Found Tel-U</title>
+    <link rel="shortcut icon" href="" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <!-- START: Template CSS-->
+    <link rel="stylesheet" href="<?= base_url('dist/vendors/bootstrap/css/bootstrap.min.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('dist/vendors/simple-line-icons/css/simple-line-icons.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('dist/vendors/toastr/toastr.min.css') ?>">
+
+    <!-- START: Custom CSS-->
+    <link rel="stylesheet" href="<?= base_url('dist/css/main.css') ?>">
+    <!-- END: Custom CSS-->
+
+    <!-- css buatan sendiri -->
+    <link rel="stylesheet" href="<?php echo base_url('dist/css/styles.css') ?>">
+    <!-- css buatan sendiri -->
+
+
+</head>
+<!-- END Head-->
+
+<?php
+$plugin = base_url('dist/vendors');
+$css = base_url('dist/css');
+// $this->load->view('template/header');
+?>
+<?= isset($css) ? $css : '' ?>
+
 <!-- START: Header-->
 <div id="header-fix" class="header fixed-top">
     <div class="site-width">
@@ -15,13 +51,13 @@
                 <a href="#" class="sidebarCollapse" id="collapse"><i class="icon-menu"></i></a>
             </div>
 
-            <form class="float-left d-none d-lg-block search-form">
+            <form class="float-left d-none d-lg-block search-form" method="POST">
                 <div class="form-group mb-0 position-relative" style="background-color: antiquewhite;">
-                    <input type="text" class="form-control border-0 rounded bg-search pl-5" placeholder="Cari barang...">
+                    <input type="text" class="form-control border-0 rounded bg-search pl-5" name="cari" placeholder="Cari barang...">
                     <div class="btn-search position-absolute top-0">
                         <a href="#"><i class="h6 icon-magnifier"></i></a>
                     </div>
-                    <a href="#" class="position-absolute close-button mobilesearch d-lg-none" data-toggle="dropdown" aria-expanded="false"><i class="icon-close h5"></i>
+                    <a href="<?php echo base_url('Home/index'); ?>" class="position-absolute close-button mobilesearch d-lg-none" data-toggle="dropdown" aria-expanded="false"><i class="icon-close h5"></i>
                     </a>
 
                 </div>
@@ -80,20 +116,20 @@
                     <li class="dropdown user-profile align-self-center d-inline-block">
                         <a href="#" class="nav-link py-0" data-toggle="dropdown" aria-expanded="false">
                             <div class="media">
-                                <img src="dist/images/author.jpg" alt="" class="d-flex img-fluid rounded-circle" width="29">
+                                <img src="<?php echo base_url(); ?>dist/images/author.jpg" alt="" class="d-flex img-fluid rounded-circle" width="29">
                             </div>
                         </a>
 
                         <div class="dropdown-menu border dropdown-menu-right p-0">
-                            <a href="profile" class="dropdown-item px-2 align-self-center d-flex">
+                            <a href="<?php echo base_url(); ?>Profile/index"" class=" dropdown-item px-2 align-self-center d-flex">
                                 <span class="icon-user mr-2 h6 mb-0"></span> Lihat Profil</a>
 
                             <div class="dropdown-divider"></div>
-                            <a href="tentang_kami" class="dropdown-item px-2 align-self-center d-flex">
+                            <a href="<?php echo base_url(); ?>Tentang_Kami/index" class="dropdown-item px-2 align-self-center d-flex">
                                 <span class="icon-info mr-2 h6 mb-0"></span> Tentang Kami</a>
                             <a href="#" class="dropdown-item px-2 align-self-center d-flex">
                                 <span class="icon-support mr-2 h6  mb-0"></span> Bantuan</a>
-                            <a href="kirim_masukan" class="dropdown-item px-2 align-self-center d-flex">
+                            <a href="<?php echo base_url(); ?>Kirim_Masukan/index"" class=" dropdown-item px-2 align-self-center d-flex">
                                 <span class="icon-envelope mr-2 h6 mb-0"></span> Kirim Masukan</a>
 
                             <div class="dropdown-divider"></div>
