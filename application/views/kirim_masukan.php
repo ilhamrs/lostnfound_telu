@@ -30,51 +30,47 @@
                                 href="#">Kembali</a>
                         </div> -->
                     <div class="card-body">
-                        <div class="row col-12">
-
-                            <div class="col-12 col-sm-4">
-                                <div class="card">
-                                    <div class="card-header d-flex justify-content-between align-items-center">
-                                        <h4 class="card-title">Screenshot (optional)</h4>
-                                    </div>
-                                    <div class="card-body">
-                                        <form action="http://html.designstream.co.in/file-upload" class="dropzone dropzone-primary dz-clickable">
-                                            <div class="dz-default dz-message"><span>Drop photos here to
-                                                    upload</span></div>
-                                            <!-- </form> -->
+                        <form action="<?php echo base_url(); ?>Kirim_Masukan/add" method="POST" enctype="multipart/form-data">
+                            <div class="row col-12">
+                                <div class="col-12 col-sm-4">
+                                    <div class="card">
+                                        <div class="card-header d-flex justify-content-between align-items-center">
+                                            <h4 class="card-title">Screenshot (optional)</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="custom-file rounded-pill mb-5">
+                                                <input id="customFile1" name="foto" type="file" class="custom-file-input rounded-pill">
+                                                <label for="customFile1" class="custom-file-label rounded-pill">Screenshot</label>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
+                                <div class="col-12 col-sm-8">
+                                    <div class="form-group row">
+                                        <label for="email" class="col-sm-2 col-form-label">E-mail</label>
+                                        <div class="col-sm-10">
+                                            <input type="email" name="email" class="form-control" id="email" placeholder="E-mail">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="isi" class="col-sm-2 col-form-label">Saran dan
+                                            Masukan</label>
+                                        <div class="col-sm-10">
+                                            <textarea name="isi" id="isi" cols="80" rows="5" class="form-control"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <div class="col-sm-10">
+                                            <button type="submit" value="Save" class="btn btn-primary btn-lg">Kirim
+                                                Masukan</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+
                             </div>
-                            <div class="col-12 col-sm-8">
-                                <!-- <form> -->
-                                <div class="form-group row">
-                                    <label for="email" class="col-sm-2 col-form-label">E-mail</label>
-                                    <div class="col-sm-10">
-                                        <input type="email" class="form-control" id="email" placeholder="E-mail">
-                                    </div>
-                                </div>
-
-                                <div class="form-group row">
-                                    <label for="masukan" class="col-sm-2 col-form-label">Saran dan
-                                        Masukan</label>
-                                    <div class="col-sm-10">
-                                        <textarea name="masukan" id="masukan" cols="80" rows="5" class="form-control"></textarea>
-                                    </div>
-                                </div>
-
-                                <div class="form-group row">
-                                    <div class="col-sm-10">
-                                        <button type="submit" class="btn btn-primary btn-lg">Kirim
-                                            Masukan</button>
-                                    </div>
-                                </div>
-                                </form>
-
-                            </div>
-
-
-                        </div>
-
+                        </form>
                     </div>
                 </div>
 
