@@ -45,7 +45,7 @@ class M_Laporan extends CI_Model
         $this->ID_posting = "";
 
         $this->ID_akun = $id_akun;
-        $this->tipe_posting = "Barang Hilang";
+        $this->tipe_posting = "Barang Ditemukan";
         $this->nama_barang = $post["nama_barang"];
         $this->kategori = $post["kategori"];
         $this->lokasi = $post["lokasi"];
