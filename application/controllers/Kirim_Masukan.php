@@ -23,10 +23,10 @@ class Kirim_Masukan extends CI_Controller
 
 	public function add()
 	{
-		$laporan = $this->M_Masukan;
+		$masukan = $this->M_Masukan;
 		$id_akun = $this->session->userdata('ID_akun');
 
-		if ($laporan->save($id_akun)) {
+		if ($masukan->save($id_akun)) {
 			redirect('Home');
 		} else {
 			$this->load->view('template/header');

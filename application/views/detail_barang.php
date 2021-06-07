@@ -120,12 +120,6 @@
                                                 <textarea disabled name="deskripsi" id="deskripsi" cols="80" rows="5" class="form-control"><?php echo $I->Description ?></textarea>
                                             </div>
                                         </div>
-                                        <!-- <div class="form-group row">
-                                            <div class="col-sm-10">
-                                                <button type="submit" class="btn btn-primary btn-lg">Upload
-                                                    Laporan</button>
-                                            </div>
-                                        </div> -->
                                     </form>
 
                                 </div>
@@ -141,58 +135,38 @@
         <div class="col-12 col-xl-9 mb-5 mb-x">
             <div class="card mb-4">
                 <div class="card-body pb-0">
-                    <h5 class="header-title  text-uppercase mb-0">3 Komentar</h5>
+                    <h5 class="header-title  text-uppercase mb-0"><?php echo count($commentPost) ?> Komentar</h5>
                 </div>
-                <div class="media d-block d-sm-flex text-center text-sm-left p-4">
-                    <img class="img-fluid d-md-flex mr-sm-4 rounded-circle" src="dist/images/author10.jpg" alt="">
-                    <div class="media-body align-self-center">
-                        <div class="float-sm-right float-none mb-0 my-3 my-sm-0"> <a href="#" class="text-primary"></a>
-                            <i class="icofont icofont-bubble-left pr-1"></i> 03/05/2021 14.50</a>
+                <?php foreach ($commentPost as $Comment) : ?>
+                    <div class="media d-block d-sm-flex text-center text-sm-left p-4">
+                        <img class="img-fluid d-md-flex mr-sm-4 rounded-circle" src="dist/images/author10.jpg" alt="">
+                        <div class="media-body align-self-center">
+                            <div class="float-sm-right float-none mb-0 my-3 my-sm-0"> <a href="#" class="text-primary"></a>
+                                <i class="icofont icofont-bubble-left pr-1"></i> <?php echo $Comment->date ?></a>
+                            </div>
+                            <h6 class="mb-1 font-weight-bold"><?php echo $Comment->ID_akun ?></h6>
+                            <?php echo $Comment->isi_komentar ?>
                         </div>
-                        <h6 class="mb-1 font-weight-bold">Sandy Jane</h6>
-                        Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede. Sed lectus.
-                        Donec mollis hendrerit risus. Phasellus nec sem in justo pellentesque facilisis.
                     </div>
-                </div>
-                <div class="media d-block d-sm-flex text-center text-sm-left p-4 border-top theme-border">
-                    <img class="img-fluid d-md-flex mr-sm-4 rounded-circle" src="dist/images/author9.jpg" alt="">
-                    <div class="media-body align-self-center">
-                        <div class="float-sm-right float-none mb-0 my-3 my-sm-0"> <a href="#" class="text-primary">
-                                <i class="icofont icofont-bubble-left pr-1"></i> 03/05/2021 14.50</a>
-                        </div>
-                        <h6 class="mb-1 font-weight-bold">John Smith</h6>
-                        Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede. Sed lectus.
-                        Donec mollis hendrerit risus. Phasellus nec sem in justo pellentesque facilisis.
-                    </div>
-                </div>
-
-                <div class="media d-block d-sm-flex text-center text-sm-left p-4 border-top them-border">
-                    <img class="img-fluid d-md-flex mr-sm-4 rounded-circle" src="dist/images/author1.jpg" alt="">
-                    <div class="media-body align-self-center">
-                        <div class="float-sm-right float-none mb-0 my-3 my-sm-0"> <a href="#" class="text-primary">
-                                <i class="icofont icofont-bubble-left pr-1"></i> 03/05/2021 14.50</a>
-                        </div>
-                        <h6 class="mb-1 font-weight-bold">Roma Ellisa</h6>
-                        Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede. Sed lectus.
-                        Donec mollis hendrerit risus. Phasellus nec sem in justo pellentesque facilisis.
-                    </div>
-                </div>
+                <?php endforeach; ?>
             </div>
 
             <div class="card">
-                <div class="card-body">
-                    <h5 class="header-title mb-3 text-uppercase">Buat Komentar</h5>
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="form-group">
-                                <textarea class="form-control height-200" placeholder="Komentar :"></textarea>
+                <form action="<?php echo base_url(); ?>Detail_barang/add/<?php echo $I->ID_posting ?>" method="POST" enctype="multipart/form-data">
+                    <div class="card-body">
+                        <h5 class="header-title mb-3 text-uppercase">Buat Komentar</h5>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <textarea name="isi_komentar" id="isi_komentar" class="form-control height-200" placeholder="Komentar :"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" value="Save" class="btn btn-primary btn-lg">Kirim Komentar</button>
                             </div>
                         </div>
-                        <div class="col-12">
-                            <a href="#" class="btn btn-primary btn-md">Kirim Komentar</a>
-                        </div>
                     </div>
-                </div>
+                </form>
             </div>
 
         </div>
