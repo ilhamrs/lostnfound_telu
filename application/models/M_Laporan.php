@@ -2,71 +2,68 @@
 
 class M_Laporan extends CI_Model
 {
-    private $_table = "postingan";
+    private $_table = "tb_posting";
 
-    public $id;
+    public $ID_akun;
     //public $id_akun;
-    public $username;
     //public $foto;
     public $image1 = "default.jpg";
     public $image2 = "default.jpg";
     public $image3 = "default.jpg";
-    public $tipe_postingan;
+    public $tipe_posting;
     public $nama_barang;
     public $kategori;
     public $lokasi;
-    public $tgl_postingan;
+    public $tgl_posting;
     public $tgl_kehilangan;
-    public $deskripsi;
+    public $Description;
     public $no_telp;
 
-    public function saveLost($username)
+    public function saveLost($id_akun)
     {
         $post = $this->input->post();
-        $this->id = "";
-        //$this->id_akun = "4";
-        $this->username = $username;
-        //$this->foto = "";
-        $this->image1 = $this->_uploadImage('foto1');
-        $this->image2 = $this->_uploadImage('foto2');
-        $this->image3 = $this->_uploadImage('foto3');
-        $this->tipe_postingan = "Kehilangan";
+        $this->ID_posting = "";
+
+        $this->ID_akun = $id_akun;
+        $this->tipe_posting = "Barang Hilang";
         $this->nama_barang = $post["nama_barang"];
         $this->kategori = $post["kategori"];
         $this->lokasi = $post["lokasi"];
-        $this->tgl_postingan = date("Y-m-d H:i:s");
+        $this->tgl_posting = date("Y-m-d H:i:s");
         $this->tgl_kehilangan = $post["tgl_kehilangan"];
-        $this->deskripsi = $post["deskripsi"];
+        $this->Description = $post["deskripsi"];
         $this->no_telp = $post["no_telp"];
+        $this->image1 = $this->_uploadImage('foto1');
+        $this->image2 = $this->_uploadImage('foto2');
+        $this->image3 = $this->_uploadImage('foto3');
         return $this->db->insert($this->_table, $this);
     }
 
-    public function saveFound($username)
+    public function saveFound($id_akun)
     {
         $post = $this->input->post();
-        $this->id = "";
-        //$this->id_akun = "4";
-        $this->username = $username;
-        //$this->foto = "";
-        $this->image1 = $this->_uploadImage('foto1');
-        $this->image2 = $this->_uploadImage('foto2');
-        $this->image3 = $this->_uploadImage('foto3');
-        $this->tipe_postingan = "Menemukan";
+        $this->ID_posting = "";
+
+        $this->ID_akun = $id_akun;
+        $this->tipe_posting = "Barang Ditemukan";
         $this->nama_barang = $post["nama_barang"];
         $this->kategori = $post["kategori"];
         $this->lokasi = $post["lokasi"];
-        $this->tgl_postingan = date("Y-m-d H:i:s");
+        $this->tgl_posting = date("Y-m-d H:i:s");
         $this->tgl_kehilangan = $post["tgl_kehilangan"];
-        $this->deskripsi = $post["deskripsi"];
+        $this->Description = $post["deskripsi"];
         $this->no_telp = $post["no_telp"];
+        $this->image1 = $this->_uploadImage('foto1');
+        $this->image2 = $this->_uploadImage('foto2');
+        $this->image3 = $this->_uploadImage('foto3');
         return $this->db->insert($this->_table, $this);
     }
 
     private function _uploadImage($foto)
     {
-        $config['upload_path']          = './uploads/';
+        $config['upload_path']          = './dist/images/uploads/';
         $config['allowed_types']        = 'gif|jpg|png';
-        $config['file_name']            = $this->id;
+        $config['file_name']            = $this->ID_posting;
         $config['overwrite']            = true;
         $config['max_size']             = 10240;
         // $config['max_width']            = 1024;
