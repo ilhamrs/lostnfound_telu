@@ -31,7 +31,7 @@ class Kirim_Masukan extends CI_Controller
 		} else {
 			$this->load->view('template/header');
 			$this->load->view('template/sidebar');
-			$this->load->view('lapor_kehilangan');
+			$this->load->view('kirim_masukan');
 			$this->load->view('template/footer');
 		}
 	}

@@ -9,6 +9,7 @@ class Detail_barang extends CI_Controller
         parent::__construct();
         $this->load->model('M_detailBarang');
         $this->load->model('M_Komentar');
+        $this->load->library('user_agent');
     }
     public function index()
     {
@@ -28,11 +29,11 @@ class Detail_barang extends CI_Controller
         $id_posting = $this->uri->segment(3);
 
 		if ($komentar->save($id_akun, $id_posting)) {
-			redirect('Home');
+            redirect($this->agent->referrer());
 		} else {
 			$this->load->view('template/header');
 			$this->load->view('template/sidebar');
-			$this->load->view('lapor_kehilangan');
+			$this->load->view('index');
 			$this->load->view('template/footer');
 		}
 	}

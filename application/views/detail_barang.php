@@ -104,7 +104,7 @@
                                         <div class="form-group row">
                                             <label for="tanggal" class="col-sm-2 col-form-label">Tgl Kehilangan</label>
                                             <div class="col-sm-10">
-                                                <input disabled type="text" class="form-control" id="date" placeholder="<?php echo $I->tgl_posting ?>">
+                                                <input disabled type="text" class="form-control" id="date" placeholder="<?php echo $I->tgl_kehilangan ?>">
                                             </div>
                                         </div>
                                         <div class="form-group row">
