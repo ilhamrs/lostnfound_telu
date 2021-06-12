@@ -19,13 +19,13 @@
                     <div class="sub-header mt-3 py-3 align-self-center d-sm-flex w-100 rounded">
                         <div class="w-sm-100 mr-auto">
                             <!-- <h5 class="mb-0">Selamat Datang di,</h5> -->
-                            <h1>Detail <?php echo $I->tipe_posting; ?></h1>
+                            <h1>Edit <?php echo $I->tipe_posting; ?></h1>
                         </div>
 
                         <ol class="breadcrumb bg-transparent align-self-center m-0 p-0">
                             <li class="breadcrumb-item"><a href="home">Home</a></li>
                             <li class="breadcrumb-item"><a href="barang_hilang"><?php echo $I->tipe_posting; ?></a></li>
-                            <li class="breadcrumb-item active">Detail <?php echo $I->tipe_posting; ?></li>
+                            <li class="breadcrumb-item active">Edit <?php echo $I->tipe_posting; ?></li>
                         </ol>
 
                     </div>
@@ -82,51 +82,112 @@
                                 <div class="col-12 col-sm-8">
                                     <form>
                                         <!-- //code mengambil data by ID -->
-                                        
+
                                         <div class="form-group row">
                                             <label for="nama_produk" class="col-sm-2 col-form-label">Nama barang</label>
                                             <div class="col-sm-10">
-                                                <input disabled type="text" class="form-control" id="nama_barang" placeholder="<?php echo $I->nama_barang ?>">
+                                                <input value="<?php echo $I->nama_barang ?>" type="text" class="form-control" id="nama_barang" placeholder="<?php echo $I->nama_barang ?>">
                                             </div>
                                         </div>
-                                        <div class="form-group row">
-                                            <label for="pelapor" class="col-sm-2 col-form-label">Pelapor</label>
-                                            <div class="col-sm-10">
-                                                <input disabled type="text" class="form-control" id="pelapor" placeholder="<?php echo $I->Nama_Lengkap ?>">
-                                            </div>
-                                        </div>
+
                                         <div class="form-group row">
                                             <label for="lokasi" class="col-sm-2 col-form-label">Lokasi</label>
                                             <div class="col-sm-10">
-                                                <input disabled type="text" class="form-control" id="lokasi" placeholder="<?php echo $I->lokasi ?>">
+                                                <select id="lokasi" name="lokasi" class="form-control">
+                                                    <option selected="" value="<?php echo $I->lokasi ?>"><?php echo $I->lokasi ?></option>
+                                                    <option value="Gd. Bangkit">Gd. Bangkit</option>
+                                                    <option value="Gd. Lingian">Gd. Lingian</option>
+                                                    <option value="Gd. Panehan">Gd. Panehan</option>
+                                                    <option value="Gd. Barung">Gd. Barung</option>
+                                                    <option value="Gd. Ararkula">Gd. Ararkula</option>
+                                                    <option value="Gd. Deli">Gd. Deli</option>
+                                                    <option value="Gd. Karang">Gd. Karang</option>
+                                                    <option value="Gd. Mangudu">Gd. Mangudu</option>
+                                                    <option value="Gd. Panambulai">Gd. Panambulai</option>
+                                                    <option value="Gd. Kultubai Utara">Gd. Kultubai Utara</option>
+                                                    <option value="Gd. Kultubai Selatan">Gd. Kultubai Selatan</option>
+                                                    <option value="Gd. Miossu">Gd. Miossu</option>
+                                                    <option value="Gd. Maratua">Gd. Maratua</option>
+                                                    <option value="Gd. Marore">Gd. Marore</option>
+                                                    <option value="Gd. Miangas">Gd. Miangas</option>
+                                                    <option value="Gd. Marampit">Gd. Marampit</option>
+                                                    <option value="Gd. Mangkai">Gd. Mangkai</option>
+                                                    <option value="Gd. Manterawu">Gd. Manterawu</option>
+                                                    <option value="Gd. Kawalusu">Gd. Kawalusu</option>
+                                                    <option value="Gd. Intata">Gd. Intata</option>
+                                                    <option value="Gd. Sebatik">Gd. Sebatik</option>
+                                                    <option value="Gd. Selaru">Gd. Selaru</option>
+                                                    <option value="Grha Wiyata Cacuk Sudarijanto-A">Grha Wiyata Cacuk Sudarijanto-A</option>
+                                                    <option value="Grha Wiyata Cacuk Sudarijanto-B">Grha Wiyata Cacuk Sudarijanto-B</option>
+                                                    <option value="Gd. Tokong Nanas">Gd. Tokong Nanas</option>
+                                                    <option value="Masjid Syamsul Ulum">Masjid Syamsul Ulum</option>
+                                                    <option value="Gd. Alor">Gd. Alor</option>
+                                                    <option value="Gd. Karaweira">Gd. Karaweira</option>
+                                                    <option value="Gd. Pelampong">Gd. Pelampong</option>
+                                                    <option value="Gd. Damar">Gd. Damar</option>
+                                                    <option value="Gd. Benggala">Gd. Benggala</option>
+                                                    <option value="Gd. Laag">Gd. Laag</option>
+                                                    <option value="Gd. Larat">Gd. Larat</option>
+                                                    <option value="Gd. Leti">Gd. Leti</option>
+                                                    <option value="Gd. Liki">Gd. Liki</option>
+                                                    <option value="Gd. Lingian">Gd. Lingian</option>
+                                                    <option value="Gd. Liran">Gd. Liran</option>
+                                                    <option value="Gd. Sambit">Gd. Sambit</option>
+                                                    <option value="Gd. Sebetul">Gd. Sebetul</option>
+                                                    <option value="Gd. Sekatung">Gd. Sekatung</option>
+                                                    <option value="Gd. Sekel">Gd. Sekel</option>
+                                                    <option value="Gd. Dana">Gd. Dana</option>
+                                                    <option value="Gd. Dona">Gd. Dona</option>
+                                                    <option value="Gd. Enggano">Gd. Enggano</option>
+                                                    <option value="Gd. Enu">Gd. Enu</option>
+                                                    <option value="Gd. Fani">Gd. Fani</option>
+                                                    <option value="Gd. Fanildo">Gd. Fanildo</option>
+                                                    <option value="Gd. Batek">Gd. Batek</option>
+                                                </select>
                                             </div>
                                         </div>
                                         <div class="form-group row">
                                             <label for="tanggal" class="col-sm-2 col-form-label">Tgl <?php echo $I->tipe_posting; ?></label>
                                             <div class="col-sm-10">
-                                                <input disabled type="text" class="form-control" id="date" placeholder="<?php echo $I->tgl_kehilangan ?>">
+                                                <input value="<?php echo $I->tgl_kehilangan ?>" type="date" class="form-control" id="date" placeholder="<?php echo $I->tgl_kehilangan ?>">
                                             </div>
                                         </div>
+
                                         <div class="form-group row">
                                             <label for="kategori" class="col-sm-2 col-form-label">Kategori</label>
                                             <div class="col-sm-10">
-                                                <input disabled type="text" class="form-control" id="kategori" placeholder="<?php echo $I->kategori ?>">
-
+                                                <select id="kategori" name="kategori" class="form-control">
+                                                    <option selected="" value="<?php echo $I->kategori ?>"><?php echo $I->kategori ?></option>
+                                                    <option value="Alat tulis">Alat tulis</option>
+                                                    <option value="Surat berharga">Surat berharga</option>
+                                                    <option value="Alat elektronik">Alat elektronik</option>
+                                                    <option value="Handphone dan aksesoris">Handphone dan aksesoris</option>
+                                                    <option value="Laptop dan Aksesoris">Laptop dan Aksesoris</option>
+                                                    <option value="Kartu identitas">Kartu identitas</option>
+                                                    <option value="Dompet">Dompet</option>
+                                                    <option value="Lainnya">Lainnya</option>
+                                                </select>
                                             </div>
                                         </div>
                                         <div class="form-group row">
                                             <label for="kontak" class="col-sm-2 col-form-label">Kontak</label>
                                             <div class="col-sm-10">
-                                                <input disabled type="number" class="form-control" id="kontak" placeholder="<?php echo $I->no_telp ?>">
+                                                <input value="<?php echo $I->no_telp ?>" type="number" class="form-control" id="kontak" placeholder="<?php echo $I->no_telp ?>">
                                             </div>
                                         </div>
                                         <div class="form-group row">
                                             <label for="deskripsi" class="col-sm-2 col-form-label">Deskripsi</label>
                                             <div class="col-sm-10">
-                                                <textarea disabled name="deskripsi" id="deskripsi" cols="80" rows="5" class="form-control"><?php echo $I->Description ?></textarea>
+                                                <textarea name="deskripsi" id="deskripsi" cols="80" rows="5" class="form-control"><?php echo $I->Description ?></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-sm-10">
+                                                <button type="submit" value="Save" class="btn btn-primary btn-lg">Simpan Perubahan</button>
                                             </div>
                                         </div>
                                     </form>
+                                    <a data-toggle="modal" data-target="#exampleModal" href="" class="btn btn-danger mb-2"><i class="fa fa-trash"></i> Hapus</a>
 
                                 </div>
                             </div>
@@ -179,6 +240,27 @@
 
 
         <!-- END: Card DATA-->
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Hapus Laporan</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Anda yakin ingin menghapus laporan ini? Laporan yang sudah terhapus tidak dapat dikembalikan.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
+                    <a href="<?php echo base_url(); ?>Edit_Barang/delete/<?php echo $I->ID_posting ?>" type="button" class="btn btn-danger  mb-2">Hapus Laporan</a>
+                </div>
+            </div>
+        </div>
     </div>
 
 </main>

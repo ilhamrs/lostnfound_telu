@@ -96,7 +96,7 @@
                                                 <div class="">Tanggal: <?php echo $RL->tgl_posting; ?></div>
 
                                             </div>
-                                            <p class="m-3" style="text-align: center;"><a href="<?php echo base_url(); ?>Detail_Barang/index/<?php echo $RL->ID_posting ?>" class="font-weight-bold text-primary">Lihat Selengkapnya</a></p>
+                                            <p class="m-3" style="text-align: center;"><a href="<?php echo base_url(); ?>Edit_Barang/index/<?php echo $RL->ID_posting ?>" class="font-weight-bold text-primary">Lihat Selengkapnya</a></p>
                                         </div>
                                     </div>
                                 <?php endforeach; ?>

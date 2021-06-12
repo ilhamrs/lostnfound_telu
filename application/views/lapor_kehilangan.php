@@ -157,18 +157,18 @@
                                         </div>
                                     </div>
 
-                                    </div>
                                 </div>
                             </div>
-                        </form>
-
                     </div>
+                    </form>
+
                 </div>
-
             </div>
-        </div>
 
-        <!-- END: Card DATA-->
+        </div>
+    </div>
+
+    <!-- END: Card DATA-->
     </div>
 </main>
 <!-- END: Content-->
