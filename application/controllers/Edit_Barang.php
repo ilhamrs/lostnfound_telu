@@ -9,6 +9,7 @@ class Edit_barang extends CI_Controller
         parent::__construct();
         $this->load->model('M_detailBarang');
         $this->load->model('M_Komentar');
+        $this->load->model("M_Laporan");
         $this->load->library('user_agent');
     }
     public function index()
@@ -25,16 +26,24 @@ class Edit_barang extends CI_Controller
     public function delete()
     {
         $id = $this->uri->segment(3);
-        //$hapus = $this->M_detailBarang;
-
+        
         $this->M_detailBarang->deleteCommentByID($id);
         $this->M_detailBarang->deletePostByID($id);
         redirect("Profile/index");
-        // $this->load->view('template/header');
-        // $this->load->view('template/sidebar');
-        // $this->load->view('index');
-        // $this->load->view('template/footer');
     }
+
+    public function edit()
+	{
+        $id = $this->uri->segment(3);
+		$laporan = $this->M_Laporan;
+		$id_akun = $this->session->userdata('ID_akun');
+
+		if ($laporan->saveEdit($id_akun)) {
+			redirect($this->agent->referrer());
+		} else {
+			redirect("Profile/index");
+		}
+	}
 
     public function add()
     {

@@ -80,13 +80,13 @@
                                     </div>
                                 </div>
                                 <div class="col-12 col-sm-8">
-                                    <form>
+                                    <form action="<?php echo base_url(); ?>Edit_barang/edit/<?php $I->ID_posting; ?>" method="POST" enctype="multipart/form-data">
                                         <!-- //code mengambil data by ID -->
-
+                                        <input type="hidden" name="id" id="id" value="<?php echo $I->ID_posting ?>">
                                         <div class="form-group row">
-                                            <label for="nama_produk" class="col-sm-2 col-form-label">Nama barang</label>
+                                            <label for="nama_barang" class="col-sm-2 col-form-label">Nama barang</label>
                                             <div class="col-sm-10">
-                                                <input value="<?php echo $I->nama_barang ?>" type="text" class="form-control" id="nama_barang" placeholder="<?php echo $I->nama_barang ?>">
+                                                <input value="<?php echo $I->nama_barang ?>" type="text" class="form-control" id="nama_barang" name="nama_barang" placeholder="<?php echo $I->nama_barang ?>">
                                             </div>
                                         </div>
 
@@ -147,9 +147,9 @@
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label for="tanggal" class="col-sm-2 col-form-label">Tgl <?php echo $I->tipe_posting; ?></label>
+                                            <label for="tgl_kehilangan" class="col-sm-2 col-form-label">Tgl <?php echo $I->tipe_posting; ?></label>
                                             <div class="col-sm-10">
-                                                <input value="<?php echo $I->tgl_kehilangan ?>" type="date" class="form-control" id="date" placeholder="<?php echo $I->tgl_kehilangan ?>">
+                                                <input value="<?php echo $I->tgl_kehilangan ?>" type="date" class="form-control" name="tgl_kehilangan" id="tgl_kehilangan" placeholder="<?php echo $I->tgl_kehilangan ?>">
                                             </div>
                                         </div>
 
@@ -170,9 +170,9 @@
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label for="kontak" class="col-sm-2 col-form-label">Kontak</label>
+                                            <label for="no_telp" class="col-sm-2 col-form-label">Kontak</label>
                                             <div class="col-sm-10">
-                                                <input value="<?php echo $I->no_telp ?>" type="number" class="form-control" id="kontak" placeholder="<?php echo $I->no_telp ?>">
+                                                <input value="<?php echo $I->no_telp ?>" type="number" class="form-control" name="no_telp" id="no_telp" placeholder="<?php echo $I->no_telp ?>">
                                             </div>
                                         </div>
                                         <div class="form-group row">

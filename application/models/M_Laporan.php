@@ -5,11 +5,9 @@ class M_Laporan extends CI_Model
     private $_table = "tb_posting";
 
     public $ID_akun;
-    //public $id_akun;
-    //public $foto;
-    public $image1 = "default.jpg";
-    public $image2 = "default.jpg";
-    public $image3 = "default.jpg";
+    public $image1;
+    public $image2;
+    public $image3;
     public $tipe_posting;
     public $nama_barang;
     public $kategori;
@@ -18,6 +16,21 @@ class M_Laporan extends CI_Model
     public $tgl_kehilangan;
     public $Description;
     public $no_telp;
+
+    public function saveEdit($id_akun)
+    {
+        $post = $this->input->post();
+        
+        $data['ID_akun'] = $id_akun;
+        $data['nama_barang'] = $post["nama_barang"];
+        $data['kategori'] = $post["kategori"];
+        $data['lokasi'] = $post["lokasi"];
+        $data['tgl_kehilangan'] = $post["tgl_kehilangan"];
+        $data['Description'] = $post["deskripsi"];
+        $data['no_telp'] = $post["no_telp"];
+        $this->db->where("ID_posting",$post["id"]);
+        return $this->db->update($this->_table, $data);
+    }
 
     public function saveLost($id_akun)
     {
