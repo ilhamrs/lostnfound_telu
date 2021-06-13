@@ -41,7 +41,7 @@ $css = base_url('dist/css');
             <div class="navbar-header  h-100 h4 mb-0 align-self-center logo-bar text-left" style="background-color: #a12520;">
                 <a href="home" class="horizontal-logo">
                     <div class="media">
-                        <img src="dist/images/Logo.png" alt="" class="d-flex img-fluid" width="200">
+                        <img src="<?php echo base_url() ?>dist/images/Logo.png" alt="" class="d-flex img-fluid" width="200">
                         <!-- <span class="h6 font-weight-bold align-self-center mb-0 ml-auto" style="color: black;">Lost
                             N Found Tel-U</span> -->
                     </div>

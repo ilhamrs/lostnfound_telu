@@ -145,7 +145,7 @@
                 </div>
                 <?php foreach ($commentPost as $Comment) : ?>
                     <div class="media d-block d-sm-flex text-center text-sm-left p-4">
-                        <img class="img-fluid d-md-flex mr-sm-4 rounded-circle" src="dist/images/author10.jpg" alt="">
+                        <img class="img-fluid d-md-flex mr-sm-4 rounded-circle" src="<?php echo base_url() ?>dist/images/author10.jpg" alt="">
                         <div class="media-body align-self-center">
                             <div class="float-sm-right float-none mb-0 my-3 my-sm-0"> <a href="#" class="text-primary"></a>
                                 <i class="icofont icofont-bubble-left pr-1"></i> <?php echo $Comment->date ?></a>

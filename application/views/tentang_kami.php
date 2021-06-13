@@ -52,22 +52,24 @@
                                 <div class="card-image business-card">
                                     <div class="background-image-maker" style="background-image: url(&quot;dist/images/ceif.jpg&quot;);"></div>
                                     <div class="holder-image">
-                                        <img src="dist/images/ceif.jpg" alt="" class="img-fluid">
+                                        <img src="<?php echo base_url() ?>dist/images/profile/Screenshot_20200226-215240.png" alt="" class="img-fluid">
                                     </div>
                                 </div>
                                 <div class="card-body">
                                     <h5 class="card-title mb-3 mt-2">Elyas Syahbana</h5>
-                                    <p class="card-text">Phasellus ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia. Phasellus ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia.</p>
-                                    <!-- <div class="row mt-4 mb-3">
-                                            <div class="col-6">
-                                                <b><i class="ion ion-android-call"></i> Phone</b><br>
-                                                +88 123 123 1234
-                                            </div>
-                                            <div class="col-6">
-                                                <b><i class="ion ion-android-pin"></i> Location</b><br>
-                                                Akron, OH 44308
-                                            </div>
-                                        </div> -->
+                                    <p class="card-text">
+                                        Mahasiswa D3 Rekayasa Perangkat Lunak Aplikasi Angkatan 2019. Bertugas sebagai Desainer website.
+                                    </p>
+                                    <div class="row mt-4 mb-3">
+                                        <div class="col-6">
+                                            <b><i class="ion ion-android-call"></i> NIM</b><br>
+                                            6706194030
+                                        </div>
+                                        <div class="col-6">
+                                            <b><i class="ion ion-android-pin"></i> Kelas</b><br>
+                                            D3RPLA-43-02
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -80,23 +82,25 @@
                                 <div class="card-image business-card">
                                     <div class="background-image-maker" style="background-image: url(&quot;dist/images/ceif.jpg&quot;);"></div>
                                     <div class="holder-image">
-                                        <img src="dist/images/ceif.jpg" alt="" class="img-fluid">
+                                        <img src="<?php echo base_url() ?>dist/images/profile/pp.jpg" alt="" class="img-fluid">
                                     </div>
 
                                 </div>
                                 <div class="card-body">
-                                    <h5 class="card-title mb-3 mt-2">M Abduh Husaini B</h5>
-                                    <p class="card-text">Phasellus ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia. Phasellus ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia.</p>
-                                    <!-- <div class="row mt-4 mb-3">
-                                            <div class="col-6">
-                                                <b><i class="ion ion-android-call"></i> Phone</b><br>
-                                                +88 123 123 1234
-                                            </div>
-                                            <div class="col-6">
-                                                <b><i class="ion ion-android-pin"></i> Location</b><br>
-                                                Akron, OH 44308
-                                            </div>
-                                        </div> -->
+                                    <h5 class="card-title mb-3 mt-2">Muhammad Abduh Husaini Batubara</h5>
+                                    <p class="card-text">
+                                        Mahasiswa D3 Rekayasa Perangkat Lunak Aplikasi Angkatan 2019. Bertugas sebagai Frontend dan Backend website.
+                                    </p>
+                                    <div class="row mt-4 mb-3">
+                                        <div class="col-6">
+                                            <b><i class="ion ion-android-call"></i> NIM</b><br>
+                                            6706193067
+                                        </div>
+                                        <div class="col-6">
+                                            <b><i class="ion ion-android-pin"></i> Kelas</b><br>
+                                            D3RPLA-43-02
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -109,23 +113,25 @@
                                 <div class="card-image business-card">
                                     <div class="background-image-maker" style="background-image: url(&quot;dist/images/ceif.jpg&quot;);"></div>
                                     <div class="holder-image">
-                                        <img src="dist/images/ceif.jpg" alt="" class="img-fluid">
+                                        <img src="<?php echo base_url() ?>dist/images/profile/aa.jpg" alt="" class="img-fluid">
                                     </div>
 
                                 </div>
                                 <div class="card-body">
-                                    <h5 class="card-title mb-3 mt-2">Ilham Ramadhani S</h5>
-                                    <p class="card-text">Phasellus ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia. Phasellus ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia.</p>
-                                    <!-- <div class="row mt-4 mb-3">
-                                            <div class="col-6">
-                                                <b><i class="ion ion-android-call"></i> Phone</b><br>
-                                                +88 123 123 1234
-                                            </div>
-                                            <div class="col-6">
-                                                <b><i class="ion ion-android-pin"></i> Location</b><br>
-                                                Akron, OH 44308
-                                            </div>
-                                        </div> -->
+                                    <h5 class="card-title mb-3 mt-2">Ilham Ramadhani Saputro</h5>
+                                    <p class="card-text">
+                                        Mahasiswa D3 Rekayasa Perangkat Lunak Aplikasi Angkatan 2019. Bertugas sebagai Frontend dan Backend website.
+                                    </p>
+                                    <div class="row mt-4 mb-3">
+                                        <div class="col-6">
+                                            <b><i class="ion ion-android-call"></i> NIM</b><br>
+                                            6706193051
+                                        </div>
+                                        <div class="col-6">
+                                            <b><i class="ion ion-android-pin"></i> Kelas</b><br>
+                                            D3RPLA-43-02
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
